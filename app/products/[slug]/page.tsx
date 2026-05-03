@@ -5,8 +5,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { getProduct, products } from '../../../lib/products'
 
-export default function ProductDetailPage() {
-  const { slug } = useParams()
+export default function ProductDetailPage(): React.JSX.Element {
+  const { slug } = useParams<{ slug: string }>()
   const product = getProduct(slug)
 
   useEffect(() => {
@@ -14,8 +14,8 @@ export default function ProductDetailPage() {
       (entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            e.target.style.opacity = '1'
-            e.target.style.transform = 'translateY(0)'
+            (e.target as HTMLElement).style.opacity = '1';
+            (e.target as HTMLElement).style.transform = 'translateY(0)'
             io.unobserve(e.target)
           }
         })
@@ -23,10 +23,11 @@ export default function ProductDetailPage() {
       { threshold: 0.08 }
     )
     document.querySelectorAll('[data-reveal]').forEach((el) => {
-      el.style.opacity = '0'
-      el.style.transform = 'translateY(20px)'
-      el.style.transition = 'opacity 0.65s ease, transform 0.65s ease'
-      io.observe(el)
+      const elem = el as HTMLElement
+      elem.style.opacity = '0'
+      elem.style.transform = 'translateY(20px)'
+      elem.style.transition = 'opacity 0.65s ease, transform 0.65s ease'
+      io.observe(elem)
     })
     return () => io.disconnect()
   }, [slug])
@@ -42,7 +43,6 @@ export default function ProductDetailPage() {
   }
 
   const related = products.filter((p) => p.slug !== slug && p.category === product.category).slice(0, 2)
-
   const paragraphs = product.description.split('\n\n')
 
   return (
@@ -64,7 +64,6 @@ export default function ProductDetailPage() {
       <section className="pd-hero">
         <div className="container">
           <div className="pd-hero-grid">
-            {/* Image */}
             <div className="pd-hero-img-wrap" data-reveal>
               <Image
                 src={product.image}
@@ -83,13 +82,11 @@ export default function ProductDetailPage() {
               </div>
             </div>
 
-            {/* Info */}
             <div className="pd-hero-info" data-reveal>
               <div className="eyebrow">{product.category}</div>
               <h1 className="pd-title">{product.name}</h1>
               <p className="pd-lede">{product.shortDesc}</p>
 
-              {/* Specs table */}
               <div className="pd-specs">
                 <div className="pd-specs-head">Technical specifications</div>
                 <div className="pd-specs-grid">
@@ -102,7 +99,6 @@ export default function ProductDetailPage() {
                 </div>
               </div>
 
-              {/* Applications */}
               <div className="pd-applications">
                 <div className="pd-specs-head">Common applications</div>
                 <div className="pd-app-chips">

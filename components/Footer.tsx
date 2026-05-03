@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Footer() {
+export default function Footer(): React.JSX.Element {
   return (
     <footer className="footer">
       <div className="container">

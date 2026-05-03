@@ -2,15 +2,14 @@
 import { useEffect } from 'react'
 import Link from 'next/link'
 
-export default function HomePage() {
-  // Scroll reveal animations
+export default function HomePage(): React.JSX.Element {
   useEffect(() => {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            e.target.style.opacity = '1'
-            e.target.style.transform = 'translateY(0)'
+            (e.target as HTMLElement).style.opacity = '1';
+            (e.target as HTMLElement).style.transform = 'translateY(0)'
             io.unobserve(e.target)
           }
         })
@@ -18,17 +17,17 @@ export default function HomePage() {
       { threshold: 0.12 }
     )
     document.querySelectorAll('[data-reveal]').forEach((el) => {
-      el.style.opacity = '0'
-      el.style.transform = 'translateY(16px)'
-      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease'
-      io.observe(el)
+      const elem = el as HTMLElement
+      elem.style.opacity = '0'
+      elem.style.transform = 'translateY(16px)'
+      elem.style.transition = 'opacity 0.7s ease, transform 0.7s ease'
+      io.observe(elem)
     })
     return () => io.disconnect()
   }, [])
 
-  // Tweaks system (edit-mode panel via postMessage)
   useEffect(() => {
-    const TWEAKS = {
+    const TWEAKS: Record<string, string> = {
       brown: '#8B5E3C',
       olive: '#7AB027',
       yellow: '#DFDF12',
@@ -37,7 +36,7 @@ export default function HomePage() {
     }
     const root = document.documentElement
 
-    function applyTweaks(t) {
+    function applyTweaks(t: Record<string, string>): void {
       if (t.brown) root.style.setProperty('--brown', t.brown)
       if (t.olive) root.style.setProperty('--olive', t.olive)
       if (t.yellow) root.style.setProperty('--yellow', t.yellow)
@@ -49,9 +48,9 @@ export default function HomePage() {
     }
     applyTweaks(TWEAKS)
 
-    let panel = null
+    let panel: HTMLDivElement | null = null
 
-    function buildPanel() {
+    function buildPanel(): void {
       panel = document.createElement('div')
       panel.id = 'tweaks-panel'
       const hasHeadline = !!document.querySelector('[data-tweak="heroHeadline"]')
@@ -128,39 +127,41 @@ export default function HomePage() {
       document.body.appendChild(panel)
 
       panel.querySelectorAll('.tp-swatches').forEach((group) => {
-        const key = group.dataset.key
+        const key = (group as HTMLElement).dataset.key ?? ''
         group.querySelectorAll('.tp-sw').forEach((sw) => {
-          if (sw.dataset.val === TWEAKS[key]) sw.classList.add('active')
-          sw.addEventListener('click', () => {
+          const swEl = sw as HTMLElement
+          if (swEl.dataset.val === TWEAKS[key]) swEl.classList.add('active')
+          swEl.addEventListener('click', () => {
             group.querySelectorAll('.tp-sw').forEach((s) => s.classList.remove('active'))
-            sw.classList.add('active')
-            TWEAKS[key] = sw.dataset.val
-            applyTweaks({ [key]: sw.dataset.val })
+            swEl.classList.add('active')
+            TWEAKS[key] = swEl.dataset.val ?? ''
+            applyTweaks({ [key]: swEl.dataset.val ?? '' })
             persist()
           })
         })
       })
 
       panel.querySelectorAll('[data-input]').forEach((inp) => {
-        const key = inp.dataset.input
-        inp.value = TWEAKS[key] || ''
-        inp.addEventListener('input', () => {
-          TWEAKS[key] = inp.value
-          applyTweaks({ [key]: inp.value })
+        const inpEl = inp as HTMLInputElement | HTMLSelectElement
+        const key = inpEl.dataset.input ?? ''
+        inpEl.value = TWEAKS[key] ?? ''
+        inpEl.addEventListener('input', () => {
+          TWEAKS[key] = inpEl.value
+          applyTweaks({ [key]: inpEl.value })
           persist()
         })
       })
     }
 
-    function persist() {
+    function persist(): void {
       try { window.parent.postMessage({ type: '__edit_mode_set_keys', edits: TWEAKS }, '*') } catch {}
     }
 
-    const onMessage = (e) => {
+    const onMessage = (e: MessageEvent): void => {
       if (!e.data || !e.data.type) return
       if (e.data.type === '__activate_edit_mode') {
         if (!panel) buildPanel()
-        panel.style.display = 'block'
+        panel!.style.display = 'block'
       } else if (e.data.type === '__deactivate_edit_mode') {
         if (panel) panel.style.display = 'none'
       }

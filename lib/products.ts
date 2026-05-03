@@ -1,4 +1,22 @@
-export const products = [
+export interface Spec {
+  label: string
+  value: string
+}
+
+export interface Product {
+  slug: string
+  name: string
+  category: string
+  badge: string
+  num: string
+  image: string
+  shortDesc: string
+  description: string
+  specs: Spec[]
+  applications: string[]
+}
+
+export const products: Product[] = [
   {
     slug: 'anigre-veneer',
     name: 'Anigre Veneer',
@@ -70,9 +88,9 @@ export const products = [
     num: '04',
     image: '/products/white-oak.jpg',
     shortDesc:
-      'The contemporary designer\'s go-to — cool grey-brown tones, tight consistent grain, and a forgiving surface for all finish types.',
+      "The contemporary designer's go-to — cool grey-brown tones, tight consistent grain, and a forgiving surface for all finish types.",
     description:
-      'White Oak (Quercus alba) has become the dominant specification in contemporary residential and commercial interiors over the last decade. Its tighter, less porous grain compared to Red Oak, combined with the natural tyloses that block the vessels, produces a surface that is more dimensionally stable and water-resistant — and a face that photographs beautifully in architectural renders.\n\nWoodtech\'s White Oak veneer is quarter-sawn by default to show the distinctive medullary ray fleck that gives the species its characteristic texture. Flat-sawn crown-cut is available on volume orders. Supplied raw or with a single-coat sealer for site handling.',
+      "White Oak (Quercus alba) has become the dominant specification in contemporary residential and commercial interiors over the last decade. Its tighter, less porous grain compared to Red Oak, combined with the natural tyloses that block the vessels, produces a surface that is more dimensionally stable and water-resistant — and a face that photographs beautifully in architectural renders.\n\nWoodtech's White Oak veneer is quarter-sawn by default to show the distinctive medullary ray fleck that gives the species its characteristic texture. Flat-sawn crown-cut is available on volume orders. Supplied raw or with a single-coat sealer for site handling.",
     specs: [
       { label: 'Thickness', value: '0.5 mm — 2 mm' },
       { label: 'Sheet size', value: '8 × 4 ft standard' },
@@ -91,9 +109,9 @@ export const products = [
     num: '05',
     image: '/products/gurjan-plywood.jpg',
     shortDesc:
-      'Bangladesh\'s most trusted structural panel — Gurjan core, phenolic bonded, pressed flat and graded for sub-tropical conditions.',
+      "Bangladesh's most trusted structural panel — Gurjan core, phenolic bonded, pressed flat and graded for sub-tropical conditions.",
     description:
-      'Gurjan (Dipterocarpus sp.) is the backbone of the Bangladesh plywood industry. Its even density and straight grain produce a core layer that presses cleanly, holds fasteners firmly, and resists the delamination that plagues inferior panels in high-humidity conditions.\n\nWoodtech\'s Gurjan Plywood is manufactured under ISO 9001 quality protocols, with each press batch tested for internal bond strength and moisture content before release. Our full BWP (Boiling Water Proof) range uses phenol-formaldehyde resin throughout — not just at the faces — making it genuinely suitable for structural, external, and wet-area applications.\n\nAvailable in 4 mm to 25 mm in full 8×4 and custom sheets. Calibrated to ±0.3 mm across the panel — a tolerance our furniture-maker customers notice immediately.',
+      "Gurjan (Dipterocarpus sp.) is the backbone of the Bangladesh plywood industry. Its even density and straight grain produce a core layer that presses cleanly, holds fasteners firmly, and resists the delamination that plagues inferior panels in high-humidity conditions.\n\nWoodtech's Gurjan Plywood is manufactured under ISO 9001 quality protocols, with each press batch tested for internal bond strength and moisture content before release. Our full BWP (Boiling Water Proof) range uses phenol-formaldehyde resin throughout — not just at the faces — making it genuinely suitable for structural, external, and wet-area applications.\n\nAvailable in 4 mm to 25 mm in full 8×4 and custom sheets. Calibrated to ±0.3 mm across the panel — a tolerance our furniture-maker customers notice immediately.",
     specs: [
       { label: 'Thickness range', value: '4 mm — 25 mm' },
       { label: 'Sheet size', value: '8 × 4 ft standard' },
@@ -114,7 +132,7 @@ export const products = [
     shortDesc:
       'Open-slat teak construction with a solid hardwood frame — ventilation, privacy, and aesthetic weight in a single unit.',
     description:
-      'The Slatted Teak Door is Woodtech\'s answer to the growing demand for doors that do more than close a room — they shape it. The open-slat construction allows air circulation and diffused light passage while maintaining visual privacy, making this door ideal for partition walls, wardrobe fronts, utility rooms, and statement entrance doors in tropical climates where natural ventilation matters.\n\nEach door is built around a full-perimeter solid Teak frame with mortise-and-tenon joinery at the corners. The slats are individually machined to ±0.2 mm width consistency, then set at a fixed pitch and locked with blind-nail fixing from the back. No exposed fasteners; no filler. Available in natural Teak finish, charcoal stain, or white primer for on-site painting.',
+      "The Slatted Teak Door is Woodtech's answer to the growing demand for doors that do more than close a room — they shape it. The open-slat construction allows air circulation and diffused light passage while maintaining visual privacy, making this door ideal for partition walls, wardrobe fronts, utility rooms, and statement entrance doors in tropical climates where natural ventilation matters.\n\nEach door is built around a full-perimeter solid Teak frame with mortise-and-tenon joinery at the corners. The slats are individually machined to ±0.2 mm width consistency, then set at a fixed pitch and locked with blind-nail fixing from the back. No exposed fasteners; no filler. Available in natural Teak finish, charcoal stain, or white primer for on-site painting.",
     specs: [
       { label: 'Thickness', value: '38 mm — 45 mm' },
       { label: 'Standard sizes', value: '7×3 ft, 7×2.5 ft' },
@@ -127,6 +145,6 @@ export const products = [
   },
 ]
 
-export function getProduct(slug) {
+export function getProduct(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug)
 }

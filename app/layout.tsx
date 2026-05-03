@@ -1,13 +1,18 @@
 import './globals.css'
+import type { Metadata } from 'next'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Woodtech Ply — Crafting Quality, Building Futures',
   description: 'Engineered plywood and solid wooden doors, pressed and finished in Bangladesh.',
 }
 
-export default function RootLayout({ children }) {
+interface RootLayoutProps {
+  children: React.ReactNode
+}
+
+export default function RootLayout({ children }: RootLayoutProps): React.JSX.Element {
   return (
     <html lang="en">
       <head>
