@@ -1,33 +1,57 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+import type { Metadata } from "next";
+import { Libre_Caslon_Text, Work_Sans, JetBrains_Mono } from "next/font/google";
+import "./styles/globals.css";
+import Nav from "@/components/shared/nav/Nav";
+import Footer from "@/components/Footer";
+import { cn } from "@/lib/utils";
+
+const serif = Libre_Caslon_Text({
+  weight: ["400", "700"],
+  variable: "--font-serif",
+  subsets: ["latin"],
+});
+
+const sans = Work_Sans({
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-sans",
+  subsets: ["latin"],
+});
+
+const mono = JetBrains_Mono({
+  weight: ["400", "500"],
+  variable: "--font-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: 'Woodtech Ply — Crafting Quality, Building Futures',
-  description: 'Engineered plywood and solid wooden doors, pressed and finished in Bangladesh.',
-}
+  title: "Woodtech Ply — Crafting Quality, Building Futures",
+  description:
+    "Engineered plywood and solid wooden doors, pressed and finished in Bangladesh.",
+};
 
-interface RootLayoutProps {
-  children: React.ReactNode
-}
-
-export default function RootLayout({ children }: RootLayoutProps): React.JSX.Element {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
-        <Nav />
-        {children}
-        <Footer />
+    <html
+      lang="en"
+      className={cn(
+        "h-full",
+        "antialiased",
+        serif.variable,
+        sans.variable,
+        mono.variable,
+      )}
+    >
+      <body className="min-h-full">
+        <div className="flex min-h-full flex-col">
+          <Nav />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
-  )
+  );
 }
