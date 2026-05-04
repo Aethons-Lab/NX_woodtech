@@ -5,7 +5,7 @@ const ProductCTASection = () => {
     <section className="border-t border-[#2a1d14] bg-[#2a1d14] px-0 py-25 text-[#f6f1ea] max-[600px]:py-20">
       <div className="mx-auto max-w-335 px-8 text-center max-[880px]:px-5 max-[480px]:px-4">
         <div data-reveal>
-          <div className="mb-5 inline-flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-[0.2em] text-[#dfdf12] before:h-px before:w-6 before:bg-[#dfdf12] before:content-['']">
+          <div className="mb-5 inline-flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-[0.2em] text-[#dfdf12] before:h-px before:w-6 before:bg-[#dfdf12] before:content-[''] after:h-px after:w-6 after:bg-[#dfdf12] after:content-['']">
             Custom orders
           </div>
           <h2 className="mb-5 text-[clamp(40px,5vw,68px)] tracking-[-0.02em]">
