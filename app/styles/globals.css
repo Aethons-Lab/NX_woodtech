@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --brown: #8b5e3c;
+  --gold: #c68a3a;
+  --olive: #7ab027;
+  --yellow: #dfdf12;
+  --cocoa: #2a1d14;
+  --bone: #f6f1ea;
+  --paper: #ede5d8;
+  --muted: #6b5847;
+  --rule: #d4c4b0;
+}
+
+@layer base {
+  body {
+    font-family: "Work Sans", system-ui, sans-serif;
+    background-color: var(--bone);
+    color: var(--cocoa);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Libre Caslon Text", Georgia, serif;
+  }
+}

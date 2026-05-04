@@ -2,14 +2,14 @@
 import { useEffect } from 'react'
 import Link from 'next/link'
 
-export default function AboutPage() {
+export default function AboutPage(): React.JSX.Element {
   useEffect(() => {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            e.target.style.opacity = '1'
-            e.target.style.transform = 'translateY(0)'
+            (e.target as HTMLElement).style.opacity = '1';
+            (e.target as HTMLElement).style.transform = 'translateY(0)'
             io.unobserve(e.target)
           }
         })
@@ -17,10 +17,11 @@ export default function AboutPage() {
       { threshold: 0.12 }
     )
     document.querySelectorAll('[data-reveal]').forEach((el) => {
-      el.style.opacity = '0'
-      el.style.transform = 'translateY(16px)'
-      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease'
-      io.observe(el)
+      const elem = el as HTMLElement
+      elem.style.opacity = '0'
+      elem.style.transform = 'translateY(16px)'
+      elem.style.transition = 'opacity 0.7s ease, transform 0.7s ease'
+      io.observe(elem)
     })
     return () => io.disconnect()
   }, [])

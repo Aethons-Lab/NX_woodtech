@@ -5,9 +5,14 @@ import Link from 'next/link'
 
 const LeafletMap = dynamic(() => import('../../components/LeafletMap'), { ssr: false })
 
-const CHIPS = ['Plywood', 'Flush Doors', 'Panel Doors', 'Block Board', 'Custom Size', 'Site Visit']
+const CHIPS = ['Plywood', 'Flush Doors', 'Panel Doors', 'Block Board', 'Custom Size', 'Site Visit'] as const
 
-const SCHEDULE = [
+interface ScheduleSlot {
+  open: number
+  close: number
+}
+
+const SCHEDULE: (ScheduleSlot | null)[] = [
   { open: 9 * 60, close: 18 * 60 }, // Sun
   { open: 9 * 60, close: 18 * 60 }, // Mon
   { open: 9 * 60, close: 18 * 60 }, // Tue
@@ -19,25 +24,33 @@ const SCHEDULE = [
 
 const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
-export default function ContactPage() {
-  const [selectedChips, setSelectedChips] = useState(new Set())
-  const [showSuccess, setShowSuccess] = useState(false)
-  const [refNumber, setRefNumber] = useState('')
-  const [submitLabel, setSubmitLabel] = useState('Send enquiry')
-  const [fieldErrors, setFieldErrors] = useState({})
-  const [hoursStatus, setHoursStatus] = useState({ open: false, text: '' })
-  const [todayIdx, setTodayIdx] = useState(-1)
-  const [activeMapIdx, setActiveMapIdx] = useState(0)
-  const formRef = useRef(null)
+interface HoursStatus {
+  open: boolean
+  text: string
+}
 
-  // Scroll reveal
+interface FieldErrors {
+  [key: string]: boolean
+}
+
+export default function ContactPage(): React.JSX.Element {
+  const [selectedChips, setSelectedChips] = useState<Set<string>>(new Set())
+  const [showSuccess, setShowSuccess] = useState<boolean>(false)
+  const [refNumber, setRefNumber] = useState<string>('')
+  const [submitLabel, setSubmitLabel] = useState<string>('Send enquiry')
+  const [fieldErrors, setFieldErrors] = useState<FieldErrors>({})
+  const [hoursStatus, setHoursStatus] = useState<HoursStatus>({ open: false, text: '' })
+  const [todayIdx, setTodayIdx] = useState<number>(-1)
+  const [activeMapIdx, setActiveMapIdx] = useState<number>(0)
+  const formRef = useRef<HTMLFormElement>(null)
+
   useEffect(() => {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            e.target.style.opacity = '1'
-            e.target.style.transform = 'translateY(0)'
+            (e.target as HTMLElement).style.opacity = '1';
+            (e.target as HTMLElement).style.transform = 'translateY(0)'
             io.unobserve(e.target)
           }
         })
@@ -45,15 +58,15 @@ export default function ContactPage() {
       { threshold: 0.12 }
     )
     document.querySelectorAll('[data-reveal]').forEach((el) => {
-      el.style.opacity = '0'
-      el.style.transform = 'translateY(16px)'
-      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease'
-      io.observe(el)
+      const elem = el as HTMLElement
+      elem.style.opacity = '0'
+      elem.style.transform = 'translateY(16px)'
+      elem.style.transition = 'opacity 0.7s ease, transform 0.7s ease'
+      io.observe(elem)
     })
     return () => io.disconnect()
   }, [])
 
-  // Business hours status
   useEffect(() => {
     const now = new Date()
     const day = now.getDay()
@@ -65,11 +78,12 @@ export default function ContactPage() {
       const closeH = String(Math.floor(today.close / 60)).padStart(2, '0')
       setHoursStatus({ open: true, text: `Closing at ${closeH}:00 today` })
     } else {
-      let next = null
+      let next: { idx: number; sched: ScheduleSlot; days: number } | null = null
       for (let i = 0; i < 7; i++) {
         const idx = (day + i) % 7
-        if (SCHEDULE[idx] && (i > 0 || minutes < SCHEDULE[idx].open)) {
-          next = { idx, sched: SCHEDULE[idx], days: i }
+        const slot = SCHEDULE[idx]
+        if (slot && (i > 0 || minutes < slot.open)) {
+          next = { idx, sched: slot, days: i }
           break
         }
       }
@@ -82,7 +96,7 @@ export default function ContactPage() {
     }
   }, [])
 
-  function toggleChip(val) {
+  function toggleChip(val: string): void {
     setSelectedChips((prev) => {
       const next = new Set(prev)
       next.has(val) ? next.delete(val) : next.add(val)
@@ -90,12 +104,13 @@ export default function ContactPage() {
     })
   }
 
-  function handleSubmit(e) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>): void {
     e.preventDefault()
-    const errors = {}
-    const name = e.target['f-name'].value.trim()
-    const email = e.target['f-email'].value.trim()
-    const msg = e.target['f-msg'].value.trim()
+    const form = e.currentTarget
+    const errors: FieldErrors = {}
+    const name = (form.elements.namedItem('f-name') as HTMLInputElement).value.trim()
+    const email = (form.elements.namedItem('f-email') as HTMLInputElement).value.trim()
+    const msg = (form.elements.namedItem('f-msg') as HTMLTextAreaElement).value.trim()
 
     if (!name) errors['f-name'] = true
     if (!email) errors['f-email'] = true
@@ -113,8 +128,8 @@ export default function ContactPage() {
     }, 700)
   }
 
-  function handleReset() {
-    formRef.current.reset()
+  function handleReset(): void {
+    formRef.current?.reset()
     setSelectedChips(new Set())
     setFieldErrors({})
     setSubmitLabel('Send enquiry')
@@ -380,7 +395,6 @@ export default function ContactPage() {
             </p>
           </div>
           <div className="map-layout" data-reveal>
-            {/* Sidebar */}
             <div className="map-sidebar">
               {[
                 {
@@ -401,7 +415,7 @@ export default function ContactPage() {
                   num: '03',
                   name: 'Factory',
                   addr: 'Chara bot tolar more, Khulna-Mongla Highway, Fakirhat, Bagerhat',
-                  phone: null,
+                  phone: null as string | null,
                   dir: 'https://www.google.com/maps/search/?api=1&query=Fakirhat+Bagerhat+Bangladesh',
                 },
               ].map((loc, i) => (
@@ -428,7 +442,6 @@ export default function ContactPage() {
                 </div>
               ))}
             </div>
-            {/* Map */}
             <div className="map-wrap">
               <LeafletMap activeIdx={activeMapIdx} />
             </div>

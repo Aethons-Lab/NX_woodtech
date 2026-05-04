@@ -2,7 +2,19 @@
 import { useEffect, useRef } from 'react'
 import 'leaflet/dist/leaflet.css'
 
-const LOCATIONS = [
+interface Location {
+  name: string
+  detail: string
+  lat: number
+  lng: number
+  phone: string | null
+}
+
+interface LeafletMapProps {
+  activeIdx: number
+}
+
+const LOCATIONS: Location[] = [
   {
     name: 'Khulna Office',
     detail: 'Dhaka Trade Centre, Suite No. 1, 11th Floor,<br>99 Kazi Nazrul Islam Avenue, Kawranbazar, Dhaka',
@@ -26,11 +38,11 @@ const LOCATIONS = [
   },
 ]
 
-export default function LeafletMap({ activeIdx }) {
-  const mapRef = useRef(null)
-  const mapObjRef = useRef(null)
-  const markersRef = useRef([])
-  const makeIconRef = useRef(null)
+export default function LeafletMap({ activeIdx }: LeafletMapProps): React.JSX.Element {
+  const mapRef = useRef<HTMLDivElement>(null)
+  const mapObjRef = useRef<import('leaflet').Map | null>(null)
+  const markersRef = useRef<import('leaflet').Marker[]>([])
+  const makeIconRef = useRef<((label: string, active: boolean) => import('leaflet').DivIcon) | null>(null)
 
   useEffect(() => {
     if (!mapRef.current || mapObjRef.current) return
@@ -51,7 +63,7 @@ export default function LeafletMap({ activeIdx }) {
         maxZoom: 19,
       }).addTo(map)
 
-      const makeIcon = (label, active) =>
+      const makeIcon = (label: string, active: boolean): import('leaflet').DivIcon =>
         L.divIcon({
           className: '',
           html: `<div style="display:flex;flex-direction:column;align-items:center;">
@@ -76,7 +88,7 @@ export default function LeafletMap({ activeIdx }) {
 
       makeIconRef.current = makeIcon
 
-      const markers = []
+      const markers: import('leaflet').Marker[] = []
       LOCATIONS.forEach((loc, i) => {
         const marker = L.marker([loc.lat, loc.lng], {
           icon: makeIcon(loc.name, i === 0),
@@ -95,7 +107,7 @@ export default function LeafletMap({ activeIdx }) {
       markersRef.current = markers
       mapObjRef.current = map
 
-      const bounds = LOCATIONS.map((l) => [l.lat, l.lng])
+      const bounds = LOCATIONS.map((l): [number, number] => [l.lat, l.lng])
       map.fitBounds(bounds, { padding: [60, 60] })
 
       setTimeout(() => markers[0].openPopup(), 600)
