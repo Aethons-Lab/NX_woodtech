@@ -26,14 +26,14 @@ export default function Nav(): React.JSX.Element {
 
   return (
     <nav
-      className="sticky top-0 z-50 border-b border-[#d4c4b0] backdrop-blur-[12px]"
+      className="sticky top-0 z-50 border-b border-[#d4c4b0] backdrop-blur-md"
       style={{ backgroundColor: "rgba(246, 241, 234, 0.92)" }}
     >
-      <div className="flex items-center justify-between max-w-[1340px] mx-auto lg:px-8 md:px-4">
+      <div className="flex items-center justify-between max-w-335 mx-auto lg:px-8 md:px-4">
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-3 font-serif font-bold text-xl py-[18px] px-8 md:px-4"
+          className="flex items-center gap-3 font-serif font-bold text-xl py-4.5 px-8 md:px-4"
         >
           <img
             src="/logo.png"

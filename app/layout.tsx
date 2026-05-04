@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Libre_Caslon_Text, Work_Sans, JetBrains_Mono } from "next/font/google";
 import "./styles/globals.css";
 import Nav from "@/components/shared/nav/Nav";
-import Footer from "@/components/Footer";
+import Footer from "@/components/shared/footer/Footer";
 import { cn } from "@/lib/utils";
 
 const serif = Libre_Caslon_Text({
