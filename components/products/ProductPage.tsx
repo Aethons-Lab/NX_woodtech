@@ -14,8 +14,6 @@ const ProductPage = () => {
     "Solid Wood Doors",
   ];
   const [active, setActive] = useState<string>("All");
-  const filtered =
-    active === "All" ? products : products.filter((p) => p.category === active);
 
   useEffect(() => {
     const io = new IntersectionObserver(
@@ -39,6 +37,10 @@ const ProductPage = () => {
     });
     return () => io.disconnect();
   }, []);
+  const filtered =
+    active === "All" ? products : products.filter((p) => p.category === active);
+
+  console.log(filtered);
 
   return (
     <div>
