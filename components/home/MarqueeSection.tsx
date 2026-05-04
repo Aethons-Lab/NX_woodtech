@@ -4,7 +4,7 @@ export function MarqueeSection() {
   return (
     <>
       <div
-        className="marquee -mx-36 overflow-x-hidden border-y border-[#2a1d1422] py-4"
+        className="marquee lg:-mx-36 overflow-x-hidden border-y border-[#2a1d1422] py-4"
         aria-hidden="true"
       >
         <div className="marquee-track flex w-max gap-8 whitespace-nowrap">
