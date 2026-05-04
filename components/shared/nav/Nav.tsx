@@ -35,7 +35,7 @@ export default function Nav() {
 
   return (
     <nav
-      className="sticky top-0 z-50 border-b border-[#d4c4b0] backdrop-blur-md"
+      className="sticky top-0 z-50 overflow-x-clip border-b border-[#d4c4b0] backdrop-blur-md"
       style={{ backgroundColor: "rgba(246, 241, 234, 0.92)" }}
     >
       <div className="flex items-center justify-between max-w-335 mx-auto lg:px-8 md:px-4 px-2">
@@ -66,7 +66,7 @@ export default function Nav() {
 
         {/* Mobile Navigation */}
         <div
-          className={`fixed inset-0 z-40 md:hidden transition-opacity duration-300 ${
+          className={`fixed inset-0 z-40 overflow-x-clip md:hidden transition-opacity duration-300 ${
             open
               ? "pointer-events-auto opacity-100"
               : "pointer-events-none opacity-0"
