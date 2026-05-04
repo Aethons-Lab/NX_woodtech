@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { links } from "../links";
 
 export default function Footer(): React.JSX.Element {
   return (
@@ -25,30 +26,15 @@ export default function Footer(): React.JSX.Element {
               Explore
             </h4>
             <div className="flex flex-col gap-2.5">
-              <Link
-                href="/"
-                className="text-sm text-[rgba(246,241,234,0.85)] transition-colors duration-150 hover:text-[#7ab027]"
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className="text-sm text-[rgba(246,241,234,0.85)] transition-colors duration-150 hover:text-[#7ab027]"
-              >
-                About
-              </Link>
-              <Link
-                href="/#products"
-                className="text-sm text-[rgba(246,241,234,0.85)] transition-colors duration-150 hover:text-[#7ab027]"
-              >
-                Products
-              </Link>
-              <Link
-                href="/contact"
-                className="text-sm text-[rgba(246,241,234,0.85)] transition-colors duration-150 hover:text-[#7ab027]"
-              >
-                Contact
-              </Link>
+              {links.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-sm text-[rgba(246,241,234,0.85)] transition-colors duration-150 hover:text-[#7ab027]"
+                >
+                  {item.label}
+                </Link>
+              ))}
             </div>
           </div>
 

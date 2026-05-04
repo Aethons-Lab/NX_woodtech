@@ -2,15 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/products", label: "Products" },
-  { href: "/clients", label: "Clients" },
-  { href: "/about", label: "About" },
-  { href: "/achievements", label: "Achievements" },
-  { href: "/contact", label: "Contact" },
-];
+import { links } from "../links";
 
 export default function Nav() {
   const pathname = usePathname();
@@ -53,7 +45,7 @@ export default function Nav() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-1 items-center">
-          {navItems.map((item) => (
+          {links.map((item) => (
             <NavLink key={item.href} href={item.href} label={item.label} />
           ))}
           <Link
@@ -100,7 +92,7 @@ export default function Nav() {
             </div>
 
             <div className="flex flex-1 flex-col gap-2 px-5 py-6 bg-[#d4c4b0]">
-              {navItems.map((item) => (
+              {links.map((item) => (
                 <NavLink key={item.href} href={item.href} label={item.label} />
               ))}
               <Link
