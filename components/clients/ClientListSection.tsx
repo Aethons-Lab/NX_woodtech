@@ -28,9 +28,12 @@ const ClientListSection = () => {
   }, []);
 
   return (
-    <section className="py-28 px-36" style={{ background: "var(--paper)" }}>
-      <div className="container">
-        <div className="grid grid-cols-3 gap-8">
+    <section
+      className="py-20 px-4 max-[880px]:py-16 max-[880px]:px-5 max-[1024px]:px-6 lg:py-28 lg:px-36"
+      style={{ background: "var(--paper)" }}
+    >
+      <div className="mx-auto max-w-335">
+        <div className="grid gap-6 grid-cols-1 max-[640px]:gap-4 max-[880px]:grid-cols-1 lg:grid-cols-3 lg:gap-8">
           {clients.map((client) => (
             <div
               key={client.id}
@@ -41,7 +44,7 @@ const ClientListSection = () => {
                 border: "1px solid var(--rule)",
               }}
             >
-              <div className="flex flex-col p-7 h-80">
+              <div className="flex flex-col p-5 max-[640px]:p-4 lg:p-7 h-auto lg:h-80">
                 <div className="flex-1">
                   <div
                     className="product-num mb-2.5"
@@ -51,7 +54,7 @@ const ClientListSection = () => {
                   </div>
 
                   <h3
-                    className="text-xl mb-2.5 font-bold leading-tight"
+                    className="text-lg max-[640px]:text-base lg:text-xl mb-2.5 font-bold leading-tight"
                     style={{
                       letterSpacing: "-0.01em",
                       color: "var(--cocoa)",
@@ -62,7 +65,7 @@ const ClientListSection = () => {
                   </h3>
 
                   <p
-                    className="text-sm mb-5 leading-relaxed"
+                    className="text-sm max-[640px]:text-xs mb-5 leading-relaxed"
                     style={{ color: "var(--muted)" }}
                   >
                     {client.description}
@@ -70,18 +73,18 @@ const ClientListSection = () => {
                 </div>
 
                 <div
-                  className="flex items-center justify-between pt-4 border-t"
+                  className="flex items-center justify-between gap-4 pt-4 border-t"
                   style={{ borderColor: "var(--rule)" }}
                 >
                   <div>
                     <p
-                      className="text-3xl font-bold mb-1"
+                      className="text-2xl max-[640px]:text-xl lg:text-3xl font-bold mb-1"
                       style={{ color: "var(--cocoa)" }}
                     >
                       {client.projectCount}
                     </p>
                     <p
-                      className="text-xs uppercase tracking-wider"
+                      className="text-xs max-[640px]:text-[10px] uppercase tracking-wider"
                       style={{
                         color: "var(--muted)",
                         fontFamily: '"JetBrains Mono", monospace',
@@ -92,13 +95,13 @@ const ClientListSection = () => {
                   </div>
                   <div className="text-right">
                     <p
-                      className="text-3xl font-bold mb-1"
+                      className="text-2xl max-[640px]:text-xl lg:text-3xl font-bold mb-1"
                       style={{ color: "var(--cocoa)" }}
                     >
                       {client.yearsPartnership}y
                     </p>
                     <p
-                      className="text-xs uppercase tracking-wider"
+                      className="text-xs max-[640px]:text-[10px] uppercase tracking-wider"
                       style={{
                         color: "var(--muted)",
                         fontFamily: '"JetBrains Mono", monospace',
