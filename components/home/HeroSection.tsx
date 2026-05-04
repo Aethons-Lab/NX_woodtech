@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export function HeroSection(): React.JSX.Element {
   return (
-    <section className="relative py-32 lg:py-48">
+    <section className="relative py-20 lg:py-28">
       <div className="mx-auto max-w-container px-8">
-        <div className="grid items-center gap-20 lg:grid-cols-2 lg:gap-32">
-          <div data-reveal className="space-y-8">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div data-reveal className="space-y-6">
             <div className="font-mono text-[11px] uppercase tracking-[0.15em] text-muted">
               Est. 2013 · Plywood &amp; Doors
             </div>
@@ -23,7 +23,7 @@ export function HeroSection(): React.JSX.Element {
               Bangladesh to a standard trusted by architects, contractors, and
               furniture makers for over two decades.
             </p>
-            <div className="hero-actions flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
+            <div className="hero-actions flex flex-col gap-3 pt-1 sm:flex-row sm:items-center">
               <a
                 href="#products"
                 className="btn btn-primary inline-flex items-center gap-2 rounded-full bg-brown px-8 py-3.5 font-sans text-sm font-medium text-bone transition-all duration-200 hover:bg-[#6b4226]"
@@ -38,12 +38,12 @@ export function HeroSection(): React.JSX.Element {
                 Our story
               </Link>
             </div>
-            <div className="hero-meta flex gap-12 pt-6 md:gap-16">
+            <div className="hero-meta flex gap-8 pt-4 md:gap-10">
               <div className="hero-meta-item">
                 <div className="text-[clamp(28px,4vw,48px)] font-serif font-bold leading-none text-cocoa">
                   13+
                 </div>
-                <div className="text-[12px] uppercase tracking-[0.1em] text-muted">
+                <div className="text-[12px] uppercase tracking-widest text-muted">
                   Years of craft
                 </div>
               </div>
@@ -51,7 +51,7 @@ export function HeroSection(): React.JSX.Element {
                 <div className="text-[clamp(28px,4vw,48px)] font-serif font-bold leading-none text-cocoa">
                   12
                 </div>
-                <div className="text-[12px] uppercase tracking-[0.1em] text-muted">
+                <div className="text-[12px] uppercase tracking-widest text-muted">
                   Product lines
                 </div>
               </div>
@@ -59,7 +59,7 @@ export function HeroSection(): React.JSX.Element {
                 <div className="text-[clamp(28px,4vw,48px)] font-serif font-bold leading-none text-cocoa">
                   ISO
                 </div>
-                <div className="text-[12px] uppercase tracking-[0.1em] text-muted">
+                <div className="text-[12px] uppercase tracking-widest text-muted">
                   9001 certified
                 </div>
               </div>
@@ -70,7 +70,7 @@ export function HeroSection(): React.JSX.Element {
             <div className="hero-badge absolute -top-3 right-8 inline-block rounded-full bg-bone px-4 py-2 font-mono text-[10px] font-semibold uppercase tracking-[0.15em] text-cocoa shadow-lg">
               New · Shield Series Doors
             </div>
-            <div className="hero-stack space-y-4">
+            <div className="hero-stack space-y-3">
               <div className="placeholder a aspect-square rounded-lg bg-paper p-8 text-sm text-muted">
                 <div>
                   PRODUCT SHOT
@@ -80,7 +80,7 @@ export function HeroSection(): React.JSX.Element {
                   angled light
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3">
                 <div className="placeholder b aspect-square rounded-lg bg-paper p-8 text-sm text-muted">
                   <div>
                     DETAIL
@@ -97,7 +97,7 @@ export function HeroSection(): React.JSX.Element {
                 </div>
               </div>
             </div>
-            <div className="hero-caption mt-6 space-y-2 text-sm text-muted">
+            <div className="hero-caption mt-4 space-y-1.5 text-sm text-muted">
               <span className="font-mono text-[10px] uppercase tracking-[0.15em]">
                 Fig. 01
               </span>

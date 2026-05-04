@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export function AboutSnippetSection(): React.JSX.Element {
   return (
-    <section className="border-b border-[#2a1d1422] py-24 lg:py-32">
+    <section className="border-b border-[#2a1d1422] py-16 lg:py-20">
       <div className="mx-auto max-w-container px-8">
-        <div className="grid gap-16 lg:grid-cols-[1fr_1.2fr] lg:gap-24">
-          <div data-reveal className="space-y-6">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
+          <div data-reveal className="space-y-4">
             <div className="font-mono text-[11px] uppercase tracking-[0.15em] text-muted">
               — 001 / About
             </div>
@@ -22,7 +22,7 @@ export function AboutSnippetSection(): React.JSX.Element {
           </div>
           <div
             data-reveal
-            className="space-y-5 font-sans text-[15px] leading-[1.7] text-muted"
+            className="space-y-4 font-sans text-[15px] leading-[1.7] text-muted"
           >
             <p>
               Woodtech Industries (Pvt.) Ltd. has been pressing plywood and

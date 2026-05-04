@@ -2,10 +2,10 @@
 
 export function WhySection(): React.JSX.Element {
   return (
-    <section className="border-b border-[#2a1d1422] py-24 lg:py-32">
+    <section className="border-b border-[#2a1d1422] py-16 lg:py-20">
       <div className="mx-auto max-w-container px-8">
-        <div className="mb-20 space-y-8 lg:mb-24">
-          <div data-reveal className="space-y-4">
+        <div className="mb-12 space-y-5 lg:mb-16">
+          <div data-reveal className="space-y-3">
             <div className="font-mono text-[11px] uppercase tracking-[0.15em] text-muted">
               003 / Why Woodtech
             </div>
@@ -24,12 +24,12 @@ export function WhySection(): React.JSX.Element {
           </p>
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2">
           <div
-            className="space-y-4 rounded-lg border border-[#2a1d1422] p-8 transition-all duration-300 hover:shadow-lg"
+            className="space-y-3 rounded-lg border border-[#2a1d1422] p-6 transition-all duration-300 hover:shadow-lg"
             data-reveal
           >
-            <div className="font-mono text-[14px] font-bold uppercase tracking-[0.1em] text-brown">
+            <div className="font-mono text-[14px] font-bold uppercase tracking-widest text-brown">
               F / 01
             </div>
             <div className="h-12 w-12">
@@ -44,17 +44,17 @@ export function WhySection(): React.JSX.Element {
               </svg>
             </div>
             <h3 className="font-serif text-xl font-bold text-cocoa">Quality</h3>
-            <p className="font-sans text-sm leading-[1.5] text-muted">
+            <p className="font-sans text-sm leading-normal text-muted">
               Every sheet is hand-graded against IS standards before leaving the
               yard. Rejects don't ship — they go back through the line.
             </p>
           </div>
 
           <div
-            className="space-y-4 rounded-lg border border-[#2a1d1422] p-8 transition-all duration-300 hover:shadow-lg"
+            className="space-y-3 rounded-lg border border-[#2a1d1422] p-6 transition-all duration-300 hover:shadow-lg"
             data-reveal
           >
-            <div className="font-mono text-[14px] font-bold uppercase tracking-[0.1em] text-brown">
+            <div className="font-mono text-[14px] font-bold uppercase tracking-widest text-brown">
               F / 02
             </div>
             <div className="h-12 w-12">
@@ -72,7 +72,7 @@ export function WhySection(): React.JSX.Element {
             <h3 className="font-serif text-xl font-bold text-cocoa">
               Durability
             </h3>
-            <p className="font-sans text-sm leading-[1.5] text-muted">
+            <p className="font-sans text-sm leading-normal text-muted">
               Phenolic resin bonding and cross-grain core construction. Built
               for Bangladeshi humidity, tested against water immersion and
               thermal cycling.
@@ -80,10 +80,10 @@ export function WhySection(): React.JSX.Element {
           </div>
 
           <div
-            className="space-y-4 rounded-lg border border-[#2a1d1422] p-8 transition-all duration-300 hover:shadow-lg"
+            className="space-y-3 rounded-lg border border-[#2a1d1422] p-6 transition-all duration-300 hover:shadow-lg"
             data-reveal
           >
-            <div className="font-mono text-[14px] font-bold uppercase tracking-[0.1em] text-brown">
+            <div className="font-mono text-[14px] font-bold uppercase tracking-widest text-brown">
               F / 03
             </div>
             <div className="h-12 w-12">
@@ -101,7 +101,7 @@ export function WhySection(): React.JSX.Element {
             <h3 className="font-serif text-xl font-bold text-cocoa">
               Innovation
             </h3>
-            <p className="font-sans text-sm leading-[1.5] text-muted">
+            <p className="font-sans text-sm leading-normal text-muted">
               In-house R&amp;D on adhesives and veneer processing. Our Shield
               Series uses a termite- and fire-resistant formulation developed on
               site.
@@ -109,10 +109,10 @@ export function WhySection(): React.JSX.Element {
           </div>
 
           <div
-            className="space-y-4 rounded-lg border border-[#2a1d1422] p-8 transition-all duration-300 hover:shadow-lg"
+            className="space-y-3 rounded-lg border border-[#2a1d1422] p-6 transition-all duration-300 hover:shadow-lg"
             data-reveal
           >
-            <div className="font-mono text-[14px] font-bold uppercase tracking-[0.1em] text-brown">
+            <div className="font-mono text-[14px] font-bold uppercase tracking-widest text-brown">
               F / 04
             </div>
             <div className="h-12 w-12">
@@ -127,7 +127,7 @@ export function WhySection(): React.JSX.Element {
               </svg>
             </div>
             <h3 className="font-serif text-xl font-bold text-cocoa">Trust</h3>
-            <p className="font-sans text-sm leading-[1.5] text-muted">
+            <p className="font-sans text-sm leading-normal text-muted">
               Two decades of continuous operation, same ownership, same
               production teams. Warranty stands behind every delivery.
             </p>

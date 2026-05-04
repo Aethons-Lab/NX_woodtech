@@ -14,7 +14,7 @@ import { TweaksPanel } from "./TweaksPanel";
 const HomePage = () => {
   useScrollReveal();
   return (
-    <>
+    <div className="lg:px-36 space-y-16 lg:space-y-24">
       <HeroSection />
       <MarqueeSection />
       <AboutSnippetSection />
@@ -24,7 +24,7 @@ const HomePage = () => {
       <TestimonialSection />
       <CTASection />
       <TweaksPanel />
-    </>
+    </div>
   );
 };
 
