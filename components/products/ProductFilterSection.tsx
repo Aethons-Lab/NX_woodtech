@@ -7,13 +7,13 @@ const ProductFilterSection: FC<{
   setActive: (category: string) => void;
 }> = ({ categories, active, filtered, setActive }) => {
   return (
-    <div className="sticky top-18.25 z-40 border-b border-[#2a1d1422] bg-[#f6f1ea]">
+    <div className="sticky top-27.25 z-40 border-b border-[#2a1d1422] bg-[#f6f1ea]">
       <div className="mx-auto max-w-335 px-8 max-[880px]:px-5 max-[480px]:px-4">
         <div className="flex flex-wrap items-center gap-5 py-4 max-[600px]:gap-3">
           <span className="whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.18em] text-[#6b5847]">
             Filter by
           </span>
-          <div className="flex flex-1 flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
                 key={cat}
