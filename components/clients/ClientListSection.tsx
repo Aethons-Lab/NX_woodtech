@@ -44,7 +44,7 @@ const ClientListSection = () => {
                 border: "1px solid var(--rule)",
               }}
             >
-              <div className="flex flex-col p-5 max-[640px]:p-4 lg:p-7 h-auto lg:h-80">
+              <div className="flex flex-col p-5 max-[640px]:p-4 lg:p-7 h-auto lg:h-56">
                 <div className="flex-1">
                   <div
                     className="product-num mb-2.5"
@@ -72,7 +72,7 @@ const ClientListSection = () => {
                   </p>
                 </div>
 
-                <div
+                {/* <div
                   className="flex items-center justify-between gap-4 pt-4 border-t"
                   style={{ borderColor: "var(--rule)" }}
                 >
@@ -110,7 +110,7 @@ const ClientListSection = () => {
                       Partnership
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
