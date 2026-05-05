@@ -205,32 +205,99 @@ export default function ProductDetailPage(): React.JSX.Element {
 
       {/* RELATED */}
       {related.length > 0 && (
-        <section className="pd-related">
-          <div className="container">
-            <div className="pd-related-head" data-reveal>
-              <div className="eyebrow">From the same family</div>
-              <h2>Related products</h2>
+        <section className="py-25 bg-[#f6f1ea] border-t border-[#2a1d1422]">
+          <div className="mx-auto max-w-335 px-8 max-[880px]:px-5 max-[480px]:px-4">
+            <div className="mb-12" data-reveal>
+              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#8b5e3c] mb-2">
+                From the same family
+              </div>
+              <h2
+                className="text-[clamp(32px,3.5vw,48px)]"
+                style={{ letterSpacing: "-0.02em" }}
+              >
+                Related products
+              </h2>
             </div>
-            <div className="pd-related-grid">
+            <div className="grid grid-cols-2 gap-6 max-[640px]:grid-cols-1">
               {related.map((rp) => (
-                <article key={rp.slug} className="pl-card" data-reveal>
-                  <Link href={`/products/${rp.slug}`} className="pl-card-link">
-                    <div className="pl-card-img-wrap">
+                <article
+                  key={rp.slug}
+                  className="bg-[#f6f1ea] border border-[#2a1d1422] overflow-hidden transition-all duration-300"
+                  style={{
+                    cursor: "pointer",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLElement).style.transform =
+                      "translateY(-4px)";
+                    (e.currentTarget as HTMLElement).style.boxShadow =
+                      "0 20px 48px rgba(42, 29, 20, 0.1)";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.transform =
+                      "translateY(0)";
+                    (e.currentTarget as HTMLElement).style.boxShadow = "none";
+                  }}
+                  data-reveal
+                >
+                  <Link
+                    href={`/products/${rp.slug}`}
+                    className="block no-underline text-inherit"
+                  >
+                    <div className="relative h-70 overflow-hidden">
                       <Image
                         src={rp.image}
                         alt={rp.name}
                         fill
                         style={{ objectFit: "cover" }}
                         sizes="(max-width: 640px) 100vw, 50vw"
+                        onMouseEnter={(e) => {
+                          (e.currentTarget as HTMLElement).style.transform =
+                            "scale(1.04)";
+                          (e.currentTarget as HTMLElement).style.transition =
+                            "transform 0.5s ease";
+                        }}
+                        onMouseLeave={(e) => {
+                          (e.currentTarget as HTMLElement).style.transform =
+                            "scale(1)";
+                        }}
                       />
-                      <span className="pl-badge">{rp.badge}</span>
+                      <span className="absolute top-4 left-4 z-10 font-mono text-[9px] uppercase tracking-[0.15em] text-[#2a1d14] bg-[#dfdf12] px-2.5 py-1.5">
+                        {rp.badge}
+                      </span>
                     </div>
-                    <div className="pl-card-body">
-                      <div className="pl-num">{rp.num} /</div>
-                      <h3 className="pl-name">{rp.name}</h3>
-                      <p className="pl-desc">{rp.shortDesc}</p>
-                      <div className="pl-footer">
-                        <span className="pl-arrow">View details →</span>
+                    <div className="p-7">
+                      <div className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#6b5847] mb-2">
+                        {rp.num} /
+                      </div>
+                      <h3
+                        className="font-serif text-2xl font-bold mb-2.5"
+                        style={{ letterSpacing: "-0.01em", lineHeight: "1.1" }}
+                      >
+                        {rp.name}
+                      </h3>
+                      <p
+                        className="text-sm text-[#6b5847] mb-5"
+                        style={{ lineHeight: "1.55" }}
+                      >
+                        {rp.shortDesc}
+                      </p>
+                      <div className="flex justify-between items-center pt-4 border-t border-[#2a1d1422] gap-3">
+                        <span
+                          className="font-mono text-[10px] uppercase tracking-[0.12em] text-[#8b5e3c] transition-all duration-200 whitespace-nowrap"
+                          style={{ cursor: "pointer" }}
+                          onMouseEnter={(e) => {
+                            (
+                              e.currentTarget as HTMLElement
+                            ).style.letterSpacing = "0.2em";
+                          }}
+                          onMouseLeave={(e) => {
+                            (
+                              e.currentTarget as HTMLElement
+                            ).style.letterSpacing = "0.12em";
+                          }}
+                        >
+                          View details →
+                        </span>
                       </div>
                     </div>
                   </Link>
@@ -242,19 +309,38 @@ export default function ProductDetailPage(): React.JSX.Element {
       )}
 
       {/* CTA */}
-      <section className="cta-band">
-        <div className="container">
+      <section className="py-25 bg-[#f6f1ea] border-t border-[#2a1d1422] text-center">
+        <div className="mx-auto max-w-335 px-8 max-[880px]:px-5 max-[480px]:px-4">
           <div data-reveal>
-            <div className="eyebrow" style={{ justifyContent: "center" }}>
+            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#8b5e3c] mb-5">
               Get a sample
             </div>
-            <h2>See this product in person.</h2>
-            <p>
+            <h2
+              className="text-[clamp(40px,5vw,68px)] mb-5"
+              style={{ letterSpacing: "-0.02em" }}
+            >
+              See this product in person.
+            </h2>
+            <p className="text-[18px] text-[#6b5847] max-w-135 mx-auto mb-9">
               Request a physical sample or arrange a site visit — our team will
               bring swatches and spec sheets to you.
             </p>
-            <Link href="/contact" className="btn btn-primary">
-              Contact us <span className="arrow">→</span>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2.5 rounded bg-[#2a1d14] px-5 py-3 text-sm font-medium text-[#f6f1ea] transition-all duration-150"
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.backgroundColor =
+                  "#8b5e3c";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.backgroundColor =
+                  "#2a1d14";
+              }}
+            >
+              Contact us
+              <span className="inline-block transition-transform duration-200">
+                →
+              </span>
             </Link>
           </div>
         </div>
