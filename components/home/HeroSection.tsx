@@ -1,5 +1,9 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
+import gurjan from "@/public/products/gurjan-plywood.jpg";
+import teak from "@/public/products/teak-door.jpg";
+import walnut from "@/public/products/walnut.jpg";
 
 export function HeroSection(): React.JSX.Element {
   return (
@@ -71,29 +75,42 @@ export function HeroSection(): React.JSX.Element {
               New · Shield Series Doors
             </div>
             <div className="hero-stack space-y-3">
-              <div className="placeholder a aspect-square rounded-lg bg-paper p-8 text-sm text-muted">
-                <div>
-                  PRODUCT SHOT
-                  <br />
-                  Stacked plywood sheets
-                  <br />
-                  angled light
-                </div>
+              <div className="relative aspect-square rounded-lg overflow-hidden bg-paper">
+                <Image
+                  src={gurjan}
+                  alt="Stacked plywood sheets with angled light"
+                  fill
+                  className="object-cover"
+                  priority
+                  quality={70}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  placeholder="blur"
+                />
               </div>
               <div className="grid grid-cols-2 gap-3">
-                <div className="placeholder b aspect-square rounded-lg bg-paper p-8 text-sm text-muted">
-                  <div>
-                    DETAIL
-                    <br />
-                    Door edge profile
-                  </div>
+                <div className="relative aspect-square rounded-lg overflow-hidden bg-paper">
+                  <Image
+                    src={teak}
+                    alt="Door edge profile detail"
+                    fill
+                    className="object-cover"
+                    loading="lazy"
+                    quality={70}
+                    sizes="(max-width: 1024px) 100vw, 25vw"
+                    placeholder="blur"
+                  />
                 </div>
-                <div className="placeholder c aspect-square rounded-lg bg-paper p-8 text-sm text-muted">
-                  <div>
-                    TEXTURE
-                    <br />
-                    Veneer grain macro
-                  </div>
+                <div className="relative aspect-square rounded-lg overflow-hidden bg-paper">
+                  <Image
+                    src={walnut}
+                    alt="Veneer grain macro texture"
+                    fill
+                    loading="lazy"
+                    className="object-cover"
+                    quality={70}
+                    sizes="(max-width: 1024px) 100vw, 25vw"
+                    placeholder="blur"
+                  />
                 </div>
               </div>
             </div>

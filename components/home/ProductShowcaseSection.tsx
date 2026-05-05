@@ -1,4 +1,8 @@
 "use client";
+import Image from "next/image";
+import gurjan from "@/public/products/gurjan-plywood.jpg";
+import teak from "@/public/products/teak.jpg";
+import whiteOak from "@/public/products/white-oak.jpg";
 
 export function ProductShowcaseSection(): React.JSX.Element {
   return (
@@ -33,16 +37,21 @@ export function ProductShowcaseSection(): React.JSX.Element {
             className="group rounded-lg border border-[#2a1d1422] transition-all duration-300 hover:shadow-lg"
             data-reveal
           >
-            <div className="placeholder aspect-square bg-paper p-8 text-sm text-muted">
-              <span className="inline-block rounded-full bg-bone px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.15em] text-cocoa">
-                Flagship
-              </span>
-              <div className="mt-4">
-                PLYWOOD
-                <br />
-                Marine &amp; commercial
-                <br />
-                sheets, stacked
+            <div className="relative aspect-square rounded-lg overflow-hidden bg-paper">
+              <Image
+                src={gurjan}
+                alt="Gurjan plywood sheets - marine grade"
+                fill
+                className="object-cover"
+                loading="lazy"
+                quality={70}
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                placeholder="blur"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent flex flex-col justify-end p-4 text-white">
+                <span className="inline-block rounded-full bg-bone/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.15em] text-cocoa w-fit">
+                  Flagship
+                </span>
               </div>
             </div>
             <div className="space-y-2.5 p-4">
@@ -71,16 +80,21 @@ export function ProductShowcaseSection(): React.JSX.Element {
             className="group rounded-lg border border-[#2a1d1422] transition-all duration-300 hover:shadow-lg"
             data-reveal
           >
-            <div className="placeholder aspect-square bg-paper p-8 text-sm text-muted">
-              <span className="inline-block rounded-full bg-bone px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.15em] text-cocoa">
-                Popular
-              </span>
-              <div className="mt-4">
-                FLUSH DOORS
-                <br />
-                Smooth veneered
-                <br />
-                face, hollow core
+            <div className="relative aspect-square rounded-lg overflow-hidden bg-paper">
+              <Image
+                src={teak}
+                alt="Teak veneer flush doors"
+                fill
+                className="object-cover"
+                loading="lazy"
+                quality={70}
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                placeholder="blur"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent flex flex-col justify-end p-4 text-white">
+                <span className="inline-block rounded-full bg-bone/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.15em] text-cocoa w-fit">
+                  Popular
+                </span>
               </div>
             </div>
             <div className="space-y-2.5 p-4">
@@ -104,21 +118,25 @@ export function ProductShowcaseSection(): React.JSX.Element {
               </div>
             </div>
           </article>
-
           <article
             className="group rounded-lg border border-[#2a1d1422] transition-all duration-300 hover:shadow-lg"
             data-reveal
           >
-            <div className="placeholder aspect-square bg-paper p-8 text-sm text-muted">
-              <span className="inline-block rounded-full bg-bone px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.15em] text-cocoa">
-                Heritage
-              </span>
-              <div className="mt-4">
-                PANEL DOORS
-                <br />
-                Frame &amp; stile
-                <br />
-                classical profile
+            <div className="relative aspect-square rounded-lg overflow-hidden bg-paper">
+              <Image
+                src={whiteOak}
+                alt="White oak panel doors"
+                fill
+                className="object-cover"
+                loading="lazy"
+                quality={70}
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                placeholder="blur"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent flex flex-col justify-end p-4 text-white">
+                <span className="inline-block rounded-full bg-bone/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.15em] text-cocoa w-fit">
+                  Heritage
+                </span>
               </div>
             </div>
             <div className="space-y-2.5 p-4">
