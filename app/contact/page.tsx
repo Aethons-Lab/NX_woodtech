@@ -196,7 +196,7 @@ export default function ContactPage(): React.JSX.Element {
                 within one business day. Three locations across Dhaka, Khulna
                 and Bagerhat.
               </p>
-              <div className="grid grid-cols-2 border border-[#2a1d1422]">
+              <div className="grid lg:grid-cols-2 border border-[#2a1d1422]">
                 <div className="flex items-start gap-3.5 p-5 border-b border-r border-[#2a1d1422] hover:bg-[#ede5d8] transition-colors">
                   <div className="w-[34px] h-[34px] border border-[#2a1d1422] rounded grid place-items-center flex-shrink-0 mt-0.5">
                     <svg
