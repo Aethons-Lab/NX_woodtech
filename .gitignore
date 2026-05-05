@@ -10,8 +10,6 @@ dist/
 coverage/
 
 # environment files
-.env
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -27,8 +25,8 @@ pnpm-debug.log*
 Thumbs.db
 
 # editor settings
-.vscode/
 .idea/
 
 # typescript
 *.tsbuildinfo
+config.bat

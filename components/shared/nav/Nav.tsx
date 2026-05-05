@@ -17,6 +17,7 @@ export default function Nav() {
     <Link
       href={href}
       className="relative px-4 py-2.5 text-sm font-medium rounded transition-colors duration-150 hover:bg-[#d4c4b0]"
+      onClick={() => setOpen(false)}
     >
       {label}
       {isActive(href) && (
