@@ -179,7 +179,7 @@ export default function ProductDetailPage(): React.JSX.Element {
       <section className="bg-[#ede5d8] border-t border-[#2a1d1422] py-16">
         <div className="mx-auto max-w-335 px-8 max-[880px]:px-5 max-[480px]:px-4">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-            <div data-reveal className="sticky top-28">
+            <div data-reveal className="top-28">
               <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.18em] text-[#8b5e3c]">
                 About this product
               </div>
