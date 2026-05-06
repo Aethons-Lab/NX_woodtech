@@ -21,7 +21,7 @@ export function CTASection(): React.JSX.Element {
           <div className="flex justify-center pt-2">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-brown px-8 py-3.5 font-sans text-sm font-medium text-bone transition-all duration-200 hover:bg-[#6b4226]"
+              className="inline-flex items-center gap-2 rounded-full bg-brown px-8 py-3.5 font-sans text-sm font-medium text-bone transition-all duration-200 hover:bg-[#6b4226] hover:text-white border border-cocoa hover:border-transparent"
             >
               Request a quote <span className="transition-transform">→</span>
             </Link>

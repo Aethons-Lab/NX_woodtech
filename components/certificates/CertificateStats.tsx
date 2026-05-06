@@ -2,6 +2,11 @@
 
 import React from "react";
 import { certificates } from "@/lib/constants/certificates";
+import Image from "next/image";
+import tickIcon from "@/public/icons/icon-tick.svg";
+import plantIcon from "@/public/icons/icon-plant.svg";
+import clipboardIcon from "@/public/icons/icon-clipboard.svg";
+import cupIcon from "@/public/icons/icon-cup.svg";
 
 const CertificateStats = () => {
   const totalCertificates = certificates.length;
@@ -19,25 +24,25 @@ const CertificateStats = () => {
     {
       label: "Total Accreditations",
       value: totalCertificates,
-      icon: "🏆",
+      icon: cupIcon,
       color: "from-blue-500 to-blue-600",
     },
     {
       label: "Active Standards",
       value: activeCount,
-      icon: "✓",
+      icon: tickIcon,
       color: "from-green-500 to-green-600",
     },
     {
       label: "Quality Systems",
       value: isoCount,
-      icon: "📋",
+      icon: clipboardIcon,
       color: "from-purple-500 to-purple-600",
     },
     {
       label: "Sustainability Marks",
       value: environmentalCount,
-      icon: "🌱",
+      icon: plantIcon,
       color: "from-emerald-500 to-emerald-600",
     },
   ];
@@ -71,7 +76,16 @@ const CertificateStats = () => {
                     {stat.value}
                   </p>
                 </div>
-                <span className="text-4xl opacity-40">{stat.icon}</span>
+                <div className="size-9 opacity-40">
+                  <Image
+                    src={stat.icon}
+                    alt={stat.label}
+                    width={100}
+                    height={100}
+                    sizes="100vw"
+                    className="size-full object-contain"
+                  />
+                </div>
               </div>
             </div>
           ))}

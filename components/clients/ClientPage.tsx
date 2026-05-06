@@ -16,7 +16,7 @@ const ClientPage = () => {
       <ClientListSection />
 
       {/* TESTIMONIALS */}
-      <ClientTestimonialsSection />
+      {/* <ClientTestimonialsSection /> */}
 
       {/* CALL TO ACTION */}
       {/* <ClientCtaSection /> */}
