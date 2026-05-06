@@ -20,7 +20,7 @@ const HomePage = () => {
       <AboutSnippetSection />
       <ProductShowcaseSection />
       <WhySection />
-      <StatsSection />
+      {/* <StatsSection /> */}
       {/* <TestimonialSection /> */}
       <CTASection />
       <TweaksPanel />
