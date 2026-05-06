@@ -1,6 +1,14 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
+import plantIcon from "@/public/icons/icon-plant.svg";
+import tickIcon from "@/public/icons/icon-tick.svg";
+import cupIcon from "@/public/icons/icon-cup.svg";
+import clipboardIcon from "@/public/icons/icon-clipboard.svg";
+import globeIcon from "@/public/icons/icon-globe.svg";
+import statIcon from "@/public/icons/icon-stat.svg";
+import trustIcon from "@/public/icons/icon-trust.svg";
 
 interface CertificateBenefit {
   title: string;
@@ -14,37 +22,37 @@ const CertificateBenefits = () => {
       title: "Golden Standard Quality",
       description:
         "ISO 9001 certification anchors our commitment to excellence, ensuring every product meets the highest international benchmarks with precision and care.",
-      icon: "✓",
+      icon: tickIcon,
     },
     {
       title: "Olive-Grounded Sustainability",
       description:
         "FSC and PEFC certifications validate our dedication to responsible forest stewardship, safeguarding natural resources for generations to come.",
-      icon: "🌱",
+      icon: plantIcon,
     },
     {
       title: "Safe & Secure Practices",
       description:
         "ISO 45001 certification demonstrates our unwavering dedication to protecting our workforce, ensuring workplace safety exceeds every standard.",
-      icon: "🛡️",
+      icon: clipboardIcon,
     },
     {
       title: "Global Market Reach",
       description:
         "CE and BIS certifications open doors across international markets, proving our products meet regulatory excellence worldwide.",
-      icon: "🌍",
+      icon: globeIcon,
     },
     {
       title: "Continuously Refined Excellence",
       description:
         "Regular audits and recertifications keep us evolving, ensuring we stay ahead of industry standards and customer expectations.",
-      icon: "📈",
+      icon: statIcon,
     },
     {
       title: "Trusted Partner Heritage",
       description:
         "Our comprehensive certifications represent a solid foundation of trust, offering customers confidence in every piece we craft.",
-      icon: "🤝",
+      icon: trustIcon,
     },
   ];
 
@@ -68,7 +76,16 @@ const CertificateBenefits = () => {
               key={index}
               className="bg-paper/10 rounded-lg p-6 hover:bg-paper/20 transition-colors duration-300 border border-bone/10 backdrop-blur-sm"
             >
-              <div className="text-4xl mb-4">{benefit.icon}</div>
+              <div className="size-9 mb-4">
+                <Image
+                  alt={benefit.title}
+                  src={benefit.icon}
+                  width={100}
+                  height={100}
+                  sizes="100vw"
+                  className="w-full h-full object-contain"
+                />
+              </div>
               <h3 className="font-serif text-lg font-bold text-bone mb-2">
                 {benefit.title}
               </h3>

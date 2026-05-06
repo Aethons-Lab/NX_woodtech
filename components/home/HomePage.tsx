@@ -21,7 +21,7 @@ const HomePage = () => {
       <ProductShowcaseSection />
       <WhySection />
       <StatsSection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <CTASection />
       <TweaksPanel />
     </div>

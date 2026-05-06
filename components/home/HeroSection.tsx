@@ -52,12 +52,12 @@ export function HeroSection(): React.JSX.Element {
                 </div>
               </div>
               <div className="hero-meta-item">
-                <div className="text-[clamp(28px,4vw,48px)] font-serif font-bold leading-none text-cocoa">
+                {/* <div className="text-[clamp(28px,4vw,48px)] font-serif font-bold leading-none text-cocoa">
                   12
                 </div>
                 <div className="text-[12px] uppercase tracking-widest text-muted">
                   Product lines
-                </div>
+                </div> */}
               </div>
               <div className="hero-meta-item">
                 <div className="text-[clamp(28px,4vw,48px)] font-serif font-bold leading-none text-cocoa">
