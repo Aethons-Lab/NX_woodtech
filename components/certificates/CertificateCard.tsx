@@ -22,9 +22,9 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate }) => {
   };
 
   return (
-    <div className="bg-paper rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 h-136 flex flex-col border border-bone">
+    <div className="bg-paper rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 h-136 flex flex-col lg:border border-bone">
       {/* Certificate Image */}
-      <div className="bg-bone flex items-center justify-center p-4">
+      <div className="bg-bone flex items-center justify-center lg:p-4">
         <div className="w-full h-56 flex items-center justify-center border-2 border-dashed border-brown/20 rounded overflow-hidden">
           {/* <span className="text-muted text-center text-sm font-serif">
             {certificate.name}
