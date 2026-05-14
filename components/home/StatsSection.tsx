@@ -10,7 +10,7 @@ export function StatsSection(): React.JSX.Element {
               13<sup className="text-[0.4em] font-normal">+</sup>
             </div>
             <p className="font-sans text-[14px] leading-normal text-muted">
-              Years of continuous operation since 2013
+              Years of continuous operation since 2014
             </p>
           </div>
           <div className="space-y-2 border-l-2 border-brown pl-5" data-reveal>

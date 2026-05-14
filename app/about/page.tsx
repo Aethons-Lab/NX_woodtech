@@ -52,8 +52,8 @@ export default function AboutPage(): React.JSX.Element {
             >
               Woodtech Industries (Pvt.) Ltd. is a family-run plywood and
               wooden-door manufacturer operating from Bagerhat, Bangladesh since
-              2013. Over ten years we've grown from one press to three
-              production halls — still grading every sheet by hand.
+              2014. Over a decade we've grown from one press to three production
+              halls — still grading every sheet by hand.
             </p>
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function AboutPage(): React.JSX.Element {
                 one.
               </p>
               <p className="text-[17px] leading-[1.65]">
-                Woodtech Industries was founded in 2013 on the bet that
+                Woodtech Industries was founded in 2014 on the bet that
                 Bangladesh's growing construction market deserved plywood that
                 kept those promises. The founding team had spent a decade in
                 timber trading and had seen, up close, how often imported and
@@ -103,7 +103,7 @@ export default function AboutPage(): React.JSX.Element {
                 <div className="space-y-5">
                   <div className="grid grid-cols-[120px_1fr] gap-8 py-5 border-b border-[#2a1d1422]">
                     <div className="font-serif text-2xl font-bold text-[#8b5e3c]">
-                      2013
+                      2014
                     </div>
                     <div>
                       <strong className="font-semibold block mb-1">
@@ -350,7 +350,7 @@ export default function AboutPage(): React.JSX.Element {
                 <div>
                   PORTRAIT
                   <br />
-                  Aminur Rahman
+                  Md. Aminur Rahman
                   <br />— managing director
                 </div>
               </div>
@@ -359,7 +359,7 @@ export default function AboutPage(): React.JSX.Element {
                   01 · MD
                 </span>
                 <h4 className="font-serif text-xl font-bold mb-1 tracking-[-0.01em]">
-                  Aminur Rahman
+                  Md. Aminur Rahman
                 </h4>
                 <div className="text-sm text-[#6b5847] mb-4">
                   Managing Director
@@ -377,7 +377,7 @@ export default function AboutPage(): React.JSX.Element {
                 <div>
                   PORTRAIT
                   <br />
-                  Ahanasur Rahman
+                  S. M. Ahasanur Rahman
                   <br />— director
                 </div>
               </div>
@@ -386,7 +386,7 @@ export default function AboutPage(): React.JSX.Element {
                   02 · Director
                 </span>
                 <h4 className="font-serif text-xl font-bold mb-1 tracking-[-0.01em]">
-                  Ahanasur Rahman
+                  S. M. Ahasanur Rahman
                 </h4>
                 <div className="text-sm text-[#6b5847] mb-4">Director</div>
                 <p className="text-sm leading-[1.55] text-[#2a1d14] pt-4 border-t border-[#2a1d1422]">
@@ -402,20 +402,20 @@ export default function AboutPage(): React.JSX.Element {
                 <div>
                   PORTRAIT
                   <br />
-                  Mizanur Rahman
-                  <br />— Director
+                  Md. Mizanoor Rahman
+                  <br />— chairman
                 </div>
               </div>
               <div className="p-6">
                 <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-[#8b5e3c] block mb-2.5">
-                  03 · Director
+                  03 · Chairman
                 </span>
                 <h4 className="font-serif text-xl font-bold mb-1 tracking-[-0.01em]">
-                  Mizanur Rahman
+                  Md. Mizanoor Rahman
                 </h4>
-                <div className="text-sm text-[#6b5847] mb-4">Director</div>
+                <div className="text-sm text-[#6b5847] mb-4">Chairman</div>
                 <p className="text-sm leading-[1.55] text-[#2a1d14] pt-4 border-t border-[#2a1d1422]">
-                  Director of Woodtech Industries (Pvt.) Ltd.
+                  Chairman of Woodtech Industries (Pvt.) Ltd.
                 </p>
               </div>
             </article>
