@@ -25,11 +25,11 @@ export function AboutSnippetSection(): React.JSX.Element {
             className="space-y-4 font-sans text-[15px] leading-[1.7] text-muted"
           >
             <p>
-              Woodtech Industries (Pvt.) Ltd. has been pressing plywood and
-              finishing doors in Bangladesh since 2003. What started as a single
-              press-line in Narayanganj now spans three production halls, a
-              dedicated door shop, and a laminating floor that supplies
-              furniture makers across the region.
+              Woodtech Industries (Pvt.) Ltd. was founded in 2014 in Bagerhat.
+              Building on a decade of prior timber-trading experience, the
+              business grew from one press line to multiple production halls, a
+              dedicated door shop, and a laminating floor serving projects
+              across Bangladesh.
             </p>
             <p>
               Every sheet that leaves our yard is graded by hand, because

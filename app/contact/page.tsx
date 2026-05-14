@@ -468,7 +468,7 @@ export default function ContactPage(): React.JSX.Element {
                 <div className="space-y-4">
                   <div>
                     <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-opacity-70 text-[#f6f1ea] mb-1">
-                      Khulna
+                      Dhaka
                     </div>
                     <div className="text-sm">
                       <a
@@ -488,7 +488,7 @@ export default function ContactPage(): React.JSX.Element {
                   </div>
                   <div>
                     <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-opacity-70 text-[#f6f1ea] mb-1">
-                      Dhaka
+                      Khulna
                     </div>
                     <div className="text-sm">
                       <a href="tel:0255012800" className="hover:text-[#c68a3a]">
@@ -536,7 +536,7 @@ export default function ContactPage(): React.JSX.Element {
                       Khulna Office
                     </div>
                     <div className="text-sm mb-2">
-                      08, Old Jessore Road (2nd Floor), Khulna-9100
+                      06 Old Jessore Road, Khulna-9100
                     </div>
                     <a
                       href="https://www.google.com/maps/search/?api=1&query=Old+Jessore+Road+Khulna+Bangladesh"
@@ -550,7 +550,7 @@ export default function ContactPage(): React.JSX.Element {
                       Dhaka Office
                     </div>
                     <div className="text-sm mb-2">
-                      Dhaka Trade Centre, Suite No. 1, 11th Floor, 99 Kazi
+                      Dhaka Trade Centre, Suite No. L, 11th Floor, 99 Kazi
                       Nazrul Islam Avenue, Kawranbazar, Dhaka
                     </div>
                     <a
@@ -650,16 +650,16 @@ export default function ContactPage(): React.JSX.Element {
                 {
                   num: "01",
                   name: "Khulna Office",
-                  addr: "Dhaka Trade Centre, Suite No. 1, 11th Floor, 99 Kazi Nazrul Islam Avenue, Kawranbazar, Dhaka",
-                  phone: "02477721103 | 01874090410",
-                  dir: "https://www.google.com/maps/search/?api=1&query=Kawranbazar+Dhaka+Bangladesh",
+                  addr: "06 Old Jessore Road, Khulna-9100",
+                  phone: "0255012800 | 01874090420",
+                  dir: "https://www.google.com/maps/search/?api=1&query=Old+Jessore+Road+Khulna+Bangladesh",
                 },
                 {
                   num: "02",
                   name: "Dhaka Office",
-                  addr: "08, Old Jessore Road (2nd Floor), Khulna-9100",
-                  phone: "0255012800 | 01874090420",
-                  dir: "https://www.google.com/maps/search/?api=1&query=Old+Jessore+Road+Khulna+Bangladesh",
+                  addr: "Dhaka Trade Centre, Suite No. L, 11th Floor, 99 Kazi Nazrul Islam Avenue, Kawranbazar, Dhaka",
+                  phone: "02477721103 | 01874090410",
+                  dir: "https://www.google.com/maps/search/?api=1&query=Kawranbazar+Dhaka+Bangladesh",
                 },
                 {
                   num: "03",

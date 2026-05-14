@@ -33,7 +33,7 @@ const CertificateBenefits = () => {
     {
       title: "Safe & Secure Practices",
       description:
-        "ISO 45001 certification demonstrates our unwavering dedication to protecting our workforce, ensuring workplace safety exceeds every standard.",
+        "Our ISO 9001:2015 quality system strengthens safe, controlled production practices at every stage of manufacturing.",
       icon: clipboardIcon,
     },
     {

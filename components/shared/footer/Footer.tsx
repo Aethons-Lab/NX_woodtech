@@ -17,7 +17,8 @@ export default function Footer(): React.JSX.Element {
             </div>
             <p className="mt-4.5 text-sm leading-[1.6] text-[rgba(246,241,234,0.65)]">
               Engineered plywood and solid wooden doors, crafted in Bangladesh
-              since 2003. Quality you can press your hand against.
+              since 2014, with roots in timber trading since 2003. Quality you
+              can press your hand against.
             </p>
           </div>
 
