@@ -91,7 +91,7 @@ export const clients: Client[] = [
     industry: "Furniture Manufacturing",
     logo: "/clients/pacific-furniture-logo.svg",
     description:
-      "Modern furniture manufacturer focusing on export markets across Asia and Middle East.",
+      "Modern furniture manufacturer serving residential and commercial projects.",
     projectCount: 19,
     testimonial:
       "Quality plywood from Woodtech has enabled us to expand our export operations significantly.",
@@ -146,10 +146,10 @@ export const clients: Client[] = [
   {
     id: "client-010",
     name: "Simplex Infrastructures Ltd",
-    industry: "Construction & Civil Engineering",
+    industry: "Residential Development",
     logo: "/clients/simplex-logo.svg",
     description:
-      "Leading infrastructure and construction company specializing in commercial and residential development.",
+      "Residential developer focused on quality construction and interior-ready project delivery.",
     projectCount: 26,
     testimonial:
       "Simplex trusts Woodtech for interior finishing materials in our premium development projects.",
@@ -204,10 +204,10 @@ export const clients: Client[] = [
   {
     id: "client-014",
     name: "Paradigm Architect & Engineering",
-    industry: "Architecture & Design",
+    industry: "Interior Design",
     logo: "/clients/paradigm-logo.svg",
     description:
-      "Award-winning architectural firm designing prestigious projects including Parliament House, Prime Minister Office, and luxury hotels.",
+      "Interior design and fit-out specialist delivering high-end interior environments across flagship projects.",
     projectCount: 31,
     testimonial:
       "For iconic projects like Hotel Four Points by Sheraton Dhaka and government buildings, Woodtech provides the quality finishes we demand.",
@@ -290,10 +290,10 @@ export const clients: Client[] = [
   {
     id: "client-020",
     name: "Shanta Holdings Limited",
-    industry: "Diversified Conglomerate",
+    industry: "Real Estate & Healthcare Construction",
     logo: "/clients/shanta-logo.svg",
     description:
-      "Diversified conglomerate with interests in pharmaceuticals, leather, and real estate.",
+      "Developer active in real estate and healthcare-sector construction projects.",
     projectCount: 22,
     testimonial:
       "Shanta Holdings values long-term supplier relationships like our partnership with Woodtech.",
@@ -318,13 +318,13 @@ export const clients: Client[] = [
   {
     id: "client-022",
     name: "FAGUN Group",
-    industry: "Real Estate & Retail",
+    industry: "Construction & Infrastructure",
     logo: "/clients/fagun-logo.svg",
     description:
-      "Leading real estate and retail development company with multiple premium shopping centers.",
+      "Construction and infrastructure-focused developer delivering mixed-use and commercial projects.",
     projectCount: 19,
     testimonial:
-      "FAGUN Group's retail properties feature Woodtech materials that combine durability with aesthetic appeal.",
+      "FAGUN Group relies on Woodtech materials for durable construction and infrastructure delivery.",
     testimonialAuthor: "Md. Shahjahan",
     testimonialAuthorRole: "Managing Director, FAGUN Group",
     yearsPartnership: 6,
@@ -353,7 +353,7 @@ export const clients: Client[] = [
     industry: "Hospitality",
     logo: "/clients/sheraton-logo.svg",
     description:
-      "Five-star luxury hotel designed by Paradigm Architects, featuring world-class amenities and finishes.",
+      "Five-star luxury hotel project featuring premium interior finishes and joinery applications.",
     projectCount: 8,
     testimonial:
       "The quality of Woodtech materials contributes to the premium experience we provide our guests.",
@@ -364,10 +364,10 @@ export const clients: Client[] = [
   {
     id: "client-025",
     name: "Next Space Limited",
-    industry: "Hospitality & Commercial Spaces",
+    industry: "Construction & Infrastructure",
     logo: "/clients/nextspace-logo.svg",
     description:
-      "Developer of contemporary hospitality and commercial workspace solutions.",
+      "Construction and infrastructure developer working on contemporary commercial projects.",
     projectCount: 12,
     testimonial:
       "Next Space's modern properties showcase Woodtech's contemporary veneer collections beautifully.",

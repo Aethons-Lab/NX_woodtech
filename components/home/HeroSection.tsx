@@ -12,7 +12,7 @@ export function HeroSection(): React.JSX.Element {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div data-reveal className="space-y-6">
             <div className="font-mono text-[11px] uppercase tracking-[0.15em] text-muted">
-              Est. 2013 · Plywood &amp; Doors
+              Est. 2014 · Plywood &amp; Doors
             </div>
             <h1
               className="hero-headline font-serif text-[clamp(48px,8vw,96px)] leading-[1.05] tracking-[-0.035em]"
@@ -24,8 +24,8 @@ export function HeroSection(): React.JSX.Element {
             </h1>
             <p className="hero-lede max-w-xl text-[17px] leading-[1.6] text-muted">
               Engineered plywood and solid wooden doors, pressed and finished in
-              Bangladesh to a standard trusted by architects, contractors, and
-              furniture makers for over two decades.
+              Bangladesh since 2014, with roots in timber trading that go back
+              over two decades.
             </p>
             <div className="hero-actions flex flex-col gap-3 pt-1 sm:flex-row sm:items-center">
               <a

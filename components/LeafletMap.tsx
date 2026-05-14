@@ -18,14 +18,14 @@ const LOCATIONS: Location[] = [
   {
     name: "Dhaka Office",
     detail:
-      "Dhaka Trade Centre, Suite No. 1, 11th Floor,<br>99 Kazi Nazrul Islam Avenue, Kawranbazar, Dhaka",
+      "Dhaka Trade Centre, Suite No. L, 11th Floor,<br>99 Kazi Nazrul Islam Avenue, Kawranbazar, Dhaka",
     lat: 23.7512,
     lng: 90.3933,
     phone: "02477721103 | 01874090410",
   },
   {
     name: "Khulna Office",
-    detail: "08, Old Jessore Road (2nd Floor), Khulna-9100",
+    detail: "06 Old Jessore Road, Khulna-9100",
     lat: 22.8172,
     lng: 89.546,
     phone: "0255012800 | 01874090420",

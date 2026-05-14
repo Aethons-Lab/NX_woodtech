@@ -62,12 +62,12 @@ export function ProductShowcaseSection(): React.JSX.Element {
                 Plywood Sheets
               </h3>
               <p className="font-sans text-sm leading-normal text-muted">
-                Phenolic- and urea-bonded sheets from 4mm to 25mm. Marine grade,
+                Phenolic- and urea-bonded sheets from 3mm to 25mm. Marine grade,
                 BWP, and MR variants — pressed flat and edge-sealed for long
                 panel life.
               </p>
               <div className="flex flex-wrap gap-2 pt-1.5 font-mono text-[11px] text-muted">
-                <span>4–25 mm</span>
+                <span>3–25 mm</span>
                 <span>·</span>
                 <span>8×4 ft std</span>
                 <span>·</span>
@@ -106,8 +106,8 @@ export function ProductShowcaseSection(): React.JSX.Element {
               </h3>
               <p className="font-sans text-sm leading-normal text-muted">
                 Solid and hollow core flush doors with cross-band construction.
-                Teak, sapele and gurjan veneer faces, ready for polish or
-                laminate finishing.
+                Sapele veneer faces are the primary specification, with teak and
+                gurjan options available for polish or laminate finishing.
               </p>
               <div className="flex flex-wrap gap-2 pt-1.5 font-mono text-[11px] text-muted">
                 <span>30–40 mm</span>
