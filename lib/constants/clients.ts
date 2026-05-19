@@ -12,7 +12,7 @@ export interface Client {
 }
 
 export const clients: Client[] = [
-  // Manufacturing & Industrial
+  // Ordered to match provided corporate client list
   {
     id: "client-001",
     name: "Bangladesh Machine Tools Factory Ltd (BMTF)",
@@ -26,6 +26,34 @@ export const clients: Client[] = [
     testimonialAuthor: "Brigadier (Retd) M. A. Halim",
     testimonialAuthorRole: "Director, BMTF",
     yearsPartnership: 10,
+  },
+  {
+    id: "client-029",
+    name: "Brac",
+    industry: "Non-profit / Development",
+    logo: "/clients/brac-logo.svg",
+    description:
+      "International development organization working across microfinance, education, and social development projects.",
+    projectCount: 12,
+    testimonial:
+      "Woodtech's sustainable materials have supported our community infrastructure initiatives.",
+    testimonialAuthor: "Dr. Muhammad Musa",
+    testimonialAuthorRole: "Program Director, BRAC",
+    yearsPartnership: 4,
+  },
+  {
+    id: "client-030",
+    name: "MAX Group",
+    industry: "Conglomerate",
+    logo: "/clients/maxgroup-logo.svg",
+    description:
+      "Diversified group with interests in manufacturing, real estate, and services.",
+    projectCount: 10,
+    testimonial:
+      "MAX Group values Woodtech's dependable supply and product quality across divisions.",
+    testimonialAuthor: "Md. Arif Khan",
+    testimonialAuthorRole: "Head of Procurement, MAX Group",
+    yearsPartnership: 3,
   },
   {
     id: "client-002",
@@ -42,120 +70,46 @@ export const clients: Client[] = [
     yearsPartnership: 8,
   },
   {
-    id: "client-003",
-    name: "TEKKEN Corporation",
-    industry: "Heavy Engineering",
-    logo: "/clients/tekken-logo.svg",
+    id: "client-027",
+    name: "Military Engineer Services (MES)",
+    industry: "Defense & Military Engineering",
+    logo: "/clients/mes-logo.svg",
     description:
-      "Specialized in heavy mechanical and structural engineering projects across Bangladesh and Southeast Asia.",
-    projectCount: 15,
-    testimonial:
-      "Woodtech's structural plywood meets our stringent engineering specifications consistently.",
-    testimonialAuthor: "Eng. Kamal Uddin",
-    testimonialAuthorRole: "Technical Director, TEKKEN Corporation",
-    yearsPartnership: 6,
-  },
-
-  // Furniture & Interior Furnishing
-  {
-    id: "client-004",
-    name: "Brothers Furniture",
-    industry: "Furniture Manufacturing",
-    logo: "/clients/brothers-furniture-logo.svg",
-    description:
-      "Premium furniture manufacturer producing contemporary and traditional designs for residential and commercial sectors.",
+      "Bangladesh Army's engineering division handling critical military construction and infrastructure projects.",
     projectCount: 28,
     testimonial:
-      "Brothers Furniture relies on Woodtech for consistent quality in veneers that define our brand identity.",
-    testimonialAuthor: "Md. Raisul Islam",
-    testimonialAuthorRole: "Managing Director, Brothers Furniture",
+      "MES values Woodtech's reliability and quality for strategic defense installations.",
+    testimonialAuthor: "Brigadier Rajesh Kumar",
+    testimonialAuthorRole: "Chief Engineer, MES",
     yearsPartnership: 9,
   },
   {
-    id: "client-005",
-    name: "Nadia Furniture",
-    industry: "Furniture Manufacturing",
-    logo: "/clients/nadia-furniture-logo.svg",
+    id: "client-031",
+    name: "Paharpur Cooling Towers Ltd. (Rooppur Power Plant)",
+    industry: "Power Plant Equipment",
+    logo: "/clients/paharpur-logo.svg",
     description:
-      "Established furniture brand known for innovative designs and sustainable manufacturing practices.",
-    projectCount: 20,
+      "Engineering firm supplying cooling tower solutions for large power generation projects.",
+    projectCount: 4,
     testimonial:
-      "Woodtech's decorative veneers help us maintain our reputation for quality and aesthetic excellence.",
-    testimonialAuthor: "Nasir Uddin",
-    testimonialAuthorRole: "CEO, Nadia Furniture",
-    yearsPartnership: 7,
+      "Woodtech supplies materials that meet the industrial-grade requirements of power projects.",
+    testimonialAuthor: "Eng. S. Rahman",
+    testimonialAuthorRole: "Project Lead, Paharpur Cooling Towers",
+    yearsPartnership: 2,
   },
   {
-    id: "client-006",
-    name: "Pacific Furniture",
-    industry: "Furniture Manufacturing",
-    logo: "/clients/pacific-furniture-logo.svg",
+    id: "client-026",
+    name: "Aviation Dhaka Consortium (ADC)",
+    industry: "Aviation & Infrastructure",
+    logo: "/clients/adc-logo.svg",
     description:
-      "Modern furniture manufacturer serving residential and commercial projects.",
-    projectCount: 19,
+      "Consortium managing Dhaka Airport third phase development and modernization.",
+    projectCount: 24,
     testimonial:
-      "Quality plywood from Woodtech has enabled us to expand our export operations significantly.",
-    testimonialAuthor: "Tariq Hassan",
-    testimonialAuthorRole: "Production Manager, Pacific Furniture",
-    yearsPartnership: 6,
-  },
-  {
-    id: "client-007",
-    name: "WALTON Group",
-    industry: "Electronics & Furniture",
-    logo: "/clients/walton-logo.svg",
-    description:
-      "Diversified conglomerate with major interests in consumer electronics, furniture, and appliances.",
-    projectCount: 35,
-    testimonial:
-      "As a leading corporate group, we require suppliers who can scale with our expanding operations. Woodtech delivers consistently.",
-    testimonialAuthor: "Golam Kibria",
-    testimonialAuthorRole: "Head of Operations, WALTON Group",
-    yearsPartnership: 11,
-  },
-
-  // Construction & Infrastructure
-  {
-    id: "client-008",
-    name: "Larsen & Toubro Ltd",
-    industry: "Construction & Infrastructure",
-    logo: "/clients/lt-logo.svg",
-    description:
-      "Global construction giant executing major infrastructure projects including the Khulna-Mongla Rail Bridge.",
-    projectCount: 42,
-    testimonial:
-      "Woodtech's structural materials meet international standards required for our large-scale infrastructure projects.",
-    testimonialAuthor: "Ashok Sharma",
-    testimonialAuthorRole: "Project Director, L&T Bangladesh",
-    yearsPartnership: 7,
-  },
-  {
-    id: "client-009",
-    name: "ITALIAN THAI DEVELOPMENT PLC (ITD)",
-    industry: "Construction & Transportation",
-    logo: "/clients/itd-logo.svg",
-    description:
-      "Major international contractor working on metro rail, highways, and critical infrastructure projects.",
-    projectCount: 38,
-    testimonial:
-      "For metro rail interiors and infrastructure applications, Woodtech provides materials that meet strict safety and quality standards.",
-    testimonialAuthor: "Somchai Prasad",
-    testimonialAuthorRole: "Project Manager, ITD Bangladesh",
+      "For critical aviation infrastructure, ADC relies on Woodtech's materials that meet international safety standards.",
+    testimonialAuthor: "Air Cdre. Mohammad Alauddin",
+    testimonialAuthorRole: "Project Director, ADC",
     yearsPartnership: 5,
-  },
-  {
-    id: "client-010",
-    name: "Simplex Infrastructures Ltd",
-    industry: "Residential Development",
-    logo: "/clients/simplex-logo.svg",
-    description:
-      "Residential developer focused on quality construction and interior-ready project delivery.",
-    projectCount: 26,
-    testimonial:
-      "Simplex trusts Woodtech for interior finishing materials in our premium development projects.",
-    testimonialAuthor: "Md. Fazlul Haque",
-    testimonialAuthorRole: "Managing Director, Simplex Infrastructures",
-    yearsPartnership: 8,
   },
   {
     id: "client-011",
@@ -172,194 +126,74 @@ export const clients: Client[] = [
     yearsPartnership: 5,
   },
   {
-    id: "client-012",
-    name: "Associated Builders Corporation Ltd (ABC)",
-    industry: "Construction & Real Estate",
-    logo: "/clients/abc-logo.svg",
+    id: "client-009",
+    name: "ITALIAN THAI DEVELOPMENT PLC (ITD)",
+    industry: "Construction & Transportation",
+    logo: "/clients/itd-logo.svg",
     description:
-      "Prominent construction and real estate developer known for high-quality residential and commercial projects.",
-    projectCount: 24,
+      "Major international contractor working on metro rail, highways, and critical infrastructure projects.",
+    projectCount: 38,
     testimonial:
-      "ABC relies on Woodtech for consistent supply of premium materials for our flagship development projects.",
-    testimonialAuthor: "Salman F. Rahman",
-    testimonialAuthorRole: "Managing Director, ABC",
-    yearsPartnership: 9,
-  },
-  {
-    id: "client-013",
-    name: "National Development Engineers Ltd (NDE)",
-    industry: "Construction & Engineering",
-    logo: "/clients/nde-logo.svg",
-    description:
-      "Engineering and construction firm engaged in major development and infrastructure projects.",
-    projectCount: 18,
-    testimonial:
-      "NDE values Woodtech's technical expertise and their ability to deliver specialized materials on schedule.",
-    testimonialAuthor: "Eng. Farooq Ahmed",
-    testimonialAuthorRole: "Chief Engineer, NDE",
-    yearsPartnership: 6,
-  },
-
-  // Architecture & Design
-  {
-    id: "client-014",
-    name: "Paradigm Architect & Engineering",
-    industry: "Interior Design",
-    logo: "/clients/paradigm-logo.svg",
-    description:
-      "Interior design and fit-out specialist delivering high-end interior environments across flagship projects.",
-    projectCount: 31,
-    testimonial:
-      "For iconic projects like Hotel Four Points by Sheraton Dhaka and government buildings, Woodtech provides the quality finishes we demand.",
-    testimonialAuthor: "Dr. Kashef Mahboob Chowdhury",
-    testimonialAuthorRole: "Principal Architect, Paradigm",
-    yearsPartnership: 10,
-  },
-  {
-    id: "client-015",
-    name: "ARCHVISTA",
-    industry: "Architecture & Design",
-    logo: "/clients/archvista-logo.svg",
-    description:
-      "Contemporary architectural practice focused on sustainable and innovative design solutions.",
-    projectCount: 16,
-    testimonial:
-      "Woodtech's commitment to sustainable materials aligns perfectly with our design philosophy.",
-    testimonialAuthor: "Arch. Nipa Chowdhury",
-    testimonialAuthorRole: "Principal, ARCHVISTA",
+      "For metro rail interiors and infrastructure applications, Woodtech provides materials that meet strict safety and quality standards.",
+    testimonialAuthor: "Somchai Prasad",
+    testimonialAuthorRole: "Project Manager, ITD Bangladesh",
     yearsPartnership: 5,
   },
   {
-    id: "client-016",
-    name: "Easel Architects & Engineers Ltd",
-    industry: "Architecture & Engineering",
-    logo: "/clients/easel-logo.svg",
+    id: "client-003",
+    name: "TEKKEN Corporation",
+    industry: "Heavy Engineering",
+    logo: "/clients/tekken-logo.svg",
     description:
-      "Full-service architecture and engineering firm delivering comprehensive design solutions.",
-    projectCount: 20,
+      "Specialized in heavy mechanical and structural engineering projects across Bangladesh and Southeast Asia.",
+    projectCount: 15,
     testimonial:
-      "Easel Architects values Woodtech's product consistency and their responsive support team.",
-    testimonialAuthor: "Arch. Rizwanul Hasan",
-    testimonialAuthorRole: "Managing Partner, Easel",
-    yearsPartnership: 7,
-  },
-  {
-    id: "client-017",
-    name: "VENNA Architects",
-    industry: "Architecture & Interior Design",
-    logo: "/clients/venna-logo.svg",
-    description:
-      "Specialized architectural and interior design consultancy for luxury residential and hospitality projects.",
-    projectCount: 17,
-    testimonial:
-      "VENNA relies on Woodtech for premium decorative veneers that elevate our interior design concepts.",
-    testimonialAuthor: "Arch. Fatema Jahan",
-    testimonialAuthorRole: "Design Director, VENNA Architects",
+      "Woodtech's structural plywood meets our stringent engineering specifications consistently.",
+    testimonialAuthor: "Eng. Kamal Uddin",
+    testimonialAuthorRole: "Technical Director, TEKKEN Corporation",
     yearsPartnership: 6,
   },
   {
-    id: "client-018",
-    name: "Synthesis ARCHITECTS",
-    industry: "Architecture & Planning",
-    logo: "/clients/synthesis-logo.svg",
+    id: "client-010",
+    name: "Simplex Infrastructures Ltd",
+    industry: "Residential Development",
+    logo: "/clients/simplex-logo.svg",
     description:
-      "Progressive architectural firm known for innovative design and sustainable building practices.",
-    projectCount: 13,
+      "Residential developer focused on quality construction and interior-ready project delivery.",
+    projectCount: 26,
     testimonial:
-      "Woodtech's sustainable sourcing supports our commitment to environmentally responsible architecture.",
-    testimonialAuthor: "Arch. Shafiq Ahmed",
-    testimonialAuthorRole: "Founder, Synthesis ARCHITECTS",
-    yearsPartnership: 5,
-  },
-
-  // Real Estate & Development
-  {
-    id: "client-019",
-    name: "Concord Group of Companies",
-    industry: "Real Estate & Development",
-    logo: "/clients/concord-logo.svg",
-    description:
-      "Major real estate developer undertaking large-scale commercial and residential development projects.",
-    projectCount: 33,
-    testimonial:
-      "Concord's diverse portfolio of premium developments benefits from Woodtech's high-quality finishing materials.",
-    testimonialAuthor: "Hasib Waheduzzaman",
-    testimonialAuthorRole: "Managing Director, Concord Group",
+      "Simplex trusts Woodtech for interior finishing materials in our premium development projects.",
+    testimonialAuthor: "Md. Fazlul Haque",
+    testimonialAuthorRole: "Managing Director, Simplex Infrastructures",
     yearsPartnership: 8,
   },
   {
-    id: "client-020",
-    name: "Shanta Holdings Limited",
-    industry: "Real Estate & Healthcare Construction",
-    logo: "/clients/shanta-logo.svg",
+    id: "client-008",
+    name: "Larsen & Toubro Ltd",
+    industry: "Construction & Infrastructure",
+    logo: "/clients/lt-logo.svg",
     description:
-      "Developer active in real estate and healthcare-sector construction projects.",
-    projectCount: 22,
+      "Global construction giant executing major infrastructure projects including the Khulna-Mongla Rail Bridge.",
+    projectCount: 42,
     testimonial:
-      "Shanta Holdings values long-term supplier relationships like our partnership with Woodtech.",
-    testimonialAuthor: "Mustafa Habibi",
-    testimonialAuthorRole: "CEO, Shanta Holdings",
+      "Woodtech's structural materials meet international standards required for our large-scale infrastructure projects.",
+    testimonialAuthor: "Ashok Sharma",
+    testimonialAuthorRole: "Project Director, L&T Bangladesh",
     yearsPartnership: 7,
   },
   {
-    id: "client-021",
-    name: "AKIJ Group",
-    industry: "Diversified Conglomerate",
-    logo: "/clients/akij-logo.svg",
+    id: "client-004",
+    name: "Brothers Furniture",
+    industry: "Furniture Manufacturing",
+    logo: "/clients/brothers-furniture-logo.svg",
     description:
-      "One of Bangladesh's leading conglomerates with diverse interests including furniture, textiles, and real estate.",
-    projectCount: 40,
+      "Premium furniture manufacturer producing contemporary and traditional designs for residential and commercial sectors.",
+    projectCount: 28,
     testimonial:
-      "AKIJ Group's scale requires a supplier partner like Woodtech who can deliver consistency across multiple divisions.",
-    testimonialAuthor: "Akhtar Hossain",
-    testimonialAuthorRole: "Group Director, AKIJ",
-    yearsPartnership: 12,
-  },
-  {
-    id: "client-022",
-    name: "FAGUN Group",
-    industry: "Construction & Infrastructure",
-    logo: "/clients/fagun-logo.svg",
-    description:
-      "Construction and infrastructure-focused developer delivering mixed-use and commercial projects.",
-    projectCount: 19,
-    testimonial:
-      "FAGUN Group relies on Woodtech materials for durable construction and infrastructure delivery.",
-    testimonialAuthor: "Md. Shahjahan",
-    testimonialAuthorRole: "Managing Director, FAGUN Group",
-    yearsPartnership: 6,
-  },
-
-  // Energy & Power
-  {
-    id: "client-023",
-    name: "Rampal Power Plant (BHEL)",
-    industry: "Energy & Power Generation",
-    logo: "/clients/rampal-logo.svg",
-    description:
-      "Major coal-fired thermal power plant developed in partnership with India's Bharat Heavy Electricals Ltd.",
-    projectCount: 16,
-    testimonial:
-      "For critical industrial applications, Rampal Power Plant depends on Woodtech's durability and reliability.",
-    testimonialAuthor: "Eng. K.P. Singh",
-    testimonialAuthorRole: "Plant Manager, Rampal Power Plant",
-    yearsPartnership: 4,
-  },
-
-  // Hospitality
-  {
-    id: "client-024",
-    name: "Hotel Four Points by Sheraton Dhaka",
-    industry: "Hospitality",
-    logo: "/clients/sheraton-logo.svg",
-    description:
-      "Five-star luxury hotel project featuring premium interior finishes and joinery applications.",
-    projectCount: 8,
-    testimonial:
-      "The quality of Woodtech materials contributes to the premium experience we provide our guests.",
-    testimonialAuthor: "Hassan Reza",
-    testimonialAuthorRole: "General Manager, Sheraton Dhaka",
-    yearsPartnership: 5,
+      "Brothers Furniture relies on Woodtech for consistent quality in veneers that define our brand identity.",
+    testimonialAuthor: "Md. Raisul Islam",
+    testimonialAuthorRole: "Managing Director, Brothers Furniture",
+    yearsPartnership: 9,
   },
   {
     id: "client-025",
@@ -418,5 +252,313 @@ export const clients: Client[] = [
     testimonialAuthor: "Md. Mizanur Rahman",
     testimonialAuthorRole: "CEO, BES",
     yearsPartnership: 6,
+  },
+  // Additional corporate clients requested
+  {
+    id: "client-029",
+    name: "Brac",
+    industry: "Non-profit / Development",
+    logo: "/clients/brac-logo.svg",
+    description:
+      "International development organization working across microfinance, education, and social development projects.",
+    projectCount: 12,
+    testimonial:
+      "Woodtech's sustainable materials have supported our community infrastructure initiatives.",
+    testimonialAuthor: "Dr. Muhammad Musa",
+    testimonialAuthorRole: "Program Director, BRAC",
+    yearsPartnership: 4,
+  },
+  {
+    id: "client-030",
+    name: "MAX Group",
+    industry: "Conglomerate",
+    logo: "/clients/maxgroup-logo.svg",
+    description:
+      "Diversified group with interests in manufacturing, real estate, and services.",
+    projectCount: 10,
+    testimonial:
+      "MAX Group values Woodtech's dependable supply and product quality across divisions.",
+    testimonialAuthor: "Md. Arif Khan",
+    testimonialAuthorRole: "Head of Procurement, MAX Group",
+    yearsPartnership: 3,
+  },
+  {
+    id: "client-031",
+    name: "Paharpur Cooling Towers Ltd. (Rooppur Power Plant)",
+    industry: "Power Plant Equipment",
+    logo: "/clients/paharpur-logo.svg",
+    description:
+      "Engineering firm supplying cooling tower solutions for large power generation projects.",
+    projectCount: 4,
+    testimonial:
+      "Woodtech supplies materials that meet the industrial-grade requirements of power projects.",
+    testimonialAuthor: "Eng. S. Rahman",
+    testimonialAuthorRole: "Project Lead, Paharpur Cooling Towers",
+    yearsPartnership: 2,
+  },
+  {
+    id: "client-032",
+    name: "Asset Development & Holdings Ltd.",
+    industry: "Real Estate & Investment",
+    logo: "/clients/assetdev-logo.svg",
+    description:
+      "Investment and development firm focused on premium commercial and residential projects.",
+    projectCount: 6,
+    testimonial:
+      "Woodtech's finishes enhance the premium quality of our developments.",
+    testimonialAuthor: "Sofia Rahman",
+    testimonialAuthorRole: "Head of Projects, Asset Development & Holdings",
+    yearsPartnership: 3,
+  },
+  {
+    id: "client-033",
+    name: "Tilottoma Bangla Group",
+    industry: "Conglomerate",
+    logo: "/clients/tilottoma-logo.svg",
+    description:
+      "Group with operations in manufacturing, textiles, and real estate sectors.",
+    projectCount: 5,
+    testimonial:
+      "Consistent product quality from Woodtech supports our manufacturing and build needs.",
+    testimonialAuthor: "Md. Tanvir",
+    testimonialAuthorRole: "Group Operations Head, Tilottoma Bangla Group",
+    yearsPartnership: 2,
+  },
+  {
+    id: "client-034",
+    name: "Liberation War Museum",
+    industry: "Cultural / Institutional",
+    logo: "/clients/liberationwar-logo.svg",
+    description:
+      "National museum preserving the history and artifacts of Bangladesh's liberation movement.",
+    projectCount: 2,
+    testimonial:
+      "Woodtech provided materials that respected conservation and display requirements for museum exhibits.",
+    testimonialAuthor: "Dr. A. H. Khan",
+    testimonialAuthorRole: "Curator, Liberation War Museum",
+    yearsPartnership: 1,
+  },
+  {
+    id: "client-035",
+    name: "Bricks & Bridge Ltd.",
+    industry: "Construction & Engineering",
+    logo: "/clients/bricksbridge-logo.svg",
+    description:
+      "Engineering and construction firm delivering bridge, road, and civil infrastructure projects.",
+    projectCount: 7,
+    testimonial:
+      "Woodtech meets the technical demands of our civil engineering applications.",
+    testimonialAuthor: "Eng. Z. Karim",
+    testimonialAuthorRole: "Managing Director, Bricks & Bridge Ltd.",
+    yearsPartnership: 3,
+  },
+  {
+    id: "client-036",
+    name: "Khulna City Medical College Hospital",
+    industry: "Healthcare",
+    logo: "/clients/khulna-medical-logo.svg",
+    description:
+      "Regional medical college hospital providing tertiary healthcare services in Khulna.",
+    projectCount: 3,
+    testimonial:
+      "Woodtech's hygienic and durable materials are suitable for healthcare facility fit-outs.",
+    testimonialAuthor: "Dr. M. S. Alam",
+    testimonialAuthorRole:
+      "Medical Superintendent, Khulna City Medical College Hospital",
+    yearsPartnership: 2,
+  },
+  {
+    id: "client-037",
+    name: "Popular Diagnostic Centre, Khulna",
+    industry: "Healthcare",
+    logo: "/clients/popular-diagnostic-logo.svg",
+    description: "Diagnostic and medical testing centre serving Khulna region.",
+    projectCount: 2,
+    testimonial:
+      "Reliable materials from Woodtech help maintain a clean and professional diagnostic environment.",
+    testimonialAuthor: "Dr. A. Karim",
+    testimonialAuthorRole: "Director, Popular Diagnostic Centre",
+    yearsPartnership: 1,
+  },
+  {
+    id: "client-038",
+    name: "Khulna Administrative Convention Centre",
+    industry: "Public / Institutional",
+    logo: "/clients/khulna-convention-logo.svg",
+    description:
+      "Government-supported convention facility hosting administrative and public events.",
+    projectCount: 1,
+    testimonial:
+      "Woodtech provided finishes that suited the multipurpose nature of our venue.",
+    testimonialAuthor: "Md. Alamgir",
+    testimonialAuthorRole: "Administrator, Khulna Convention Centre",
+    yearsPartnership: 1,
+  },
+  {
+    id: "client-039",
+    name: "Hotel City Inn, Khulna",
+    industry: "Hospitality",
+    logo: "/clients/hotel-cityinn-logo.svg",
+    description:
+      "Mid-scale hotel serving business and leisure travellers in Khulna.",
+    projectCount: 2,
+    testimonial:
+      "Woodtech's finishes uplifted our guestroom interiors while staying within budget.",
+    testimonialAuthor: "Mr. R. Chowdhury",
+    testimonialAuthorRole: "General Manager, Hotel City Inn",
+    yearsPartnership: 1,
+  },
+  {
+    id: "client-040",
+    name: "Doreen Developments Ltd.",
+    industry: "Real Estate & Development",
+    logo: "/clients/doreen-logo.svg",
+    description:
+      "Renowned real estate developer delivering residential and mixed-use projects across Bangladesh.",
+    projectCount: 9,
+    testimonial:
+      "Doreen relies on Woodtech for consistent finishing materials across our developments.",
+    testimonialAuthor: "Md. Kamal",
+    testimonialAuthorRole: "Head of Procurement, Doreen Developments",
+    yearsPartnership: 4,
+  },
+  {
+    id: "client-041",
+    name: "CHARUTA Private Limited",
+    industry: "Design & Construction",
+    logo: "/clients/charuta-logo.svg",
+    description:
+      "Private limited company engaged in architectural and construction services.",
+    projectCount: 3,
+    testimonial:
+      "Woodtech supports our bespoke interior projects with quality materials and service.",
+    testimonialAuthor: "Arch. Charuta S.",
+    testimonialAuthorRole: "Founder, CHARUTA Pvt. Ltd.",
+    yearsPartnership: 2,
+  },
+  {
+    id: "client-042",
+    name: "MYTH Ltd.",
+    industry: "Design & Creative",
+    logo: "/clients/myth-logo.svg",
+    description:
+      "Creative design firm working on interiors, exhibitions, and bespoke joinery projects.",
+    projectCount: 4,
+    testimonial:
+      "We choose Woodtech for its finish quality and material reliability on creative builds.",
+    testimonialAuthor: "Md. Rafi",
+    testimonialAuthorRole: "Creative Director, MYTH Ltd.",
+    yearsPartnership: 2,
+  },
+  {
+    id: "client-043",
+    name: "VITTI STHAPATI BRINDO Ltd.",
+    industry: "Architecture & Design",
+    logo: "/clients/vitti-logo.svg",
+    description:
+      "Architectural consultancy focused on urban and institutional design projects.",
+    projectCount: 3,
+    testimonial:
+      "Woodtech's product range complements our material palette for civic projects.",
+    testimonialAuthor: "Arch. S. B. Rahman",
+    testimonialAuthorRole: "Director, Vitti Sthapati Brindo",
+    yearsPartnership: 1,
+  },
+  {
+    id: "client-044",
+    name: "Sthapotto Design & Development Ltd.",
+    industry: "Design & Development",
+    logo: "/clients/sthapotto-logo.svg",
+    description:
+      "Design and development consultancy focusing on residential and commercial projects.",
+    projectCount: 5,
+    testimonial:
+      "Woodtech helps us meet our design intent with reliable finishes and textures.",
+    testimonialAuthor: "Arch. N. Aziz",
+    testimonialAuthorRole: "Principal, Sthapotto Design & Development",
+    yearsPartnership: 2,
+  },
+  {
+    id: "client-045",
+    name: "Volume Zero Architects",
+    industry: "Architecture",
+    logo: "/clients/volumezero-logo.svg",
+    description:
+      "Contemporary architecture studio delivering modern residential and commercial work.",
+    projectCount: 4,
+    testimonial:
+      "Volume Zero trusts Woodtech for premium veneers that realize our design details.",
+    testimonialAuthor: "Arch. Laila Sultana",
+    testimonialAuthorRole: "Principal Architect, Volume Zero",
+    yearsPartnership: 2,
+  },
+  {
+    id: "client-046",
+    name: "SHATOTTO",
+    industry: "Architecture & Design",
+    logo: "/clients/shatotto-logo.svg",
+    description:
+      "Design studio working on diverse architectural and interior projects.",
+    projectCount: 3,
+    testimonial:
+      "Woodtech's sustainable options align with our practice's environmental goals.",
+    testimonialAuthor: "Arch. R. Khan",
+    testimonialAuthorRole: "Founder, SHATOTTO",
+    yearsPartnership: 1,
+  },
+  {
+    id: "client-047",
+    name: "Professional Associates Ltd.",
+    industry: "Engineering & Consultancy",
+    logo: "/clients/professional-associates-logo.svg",
+    description:
+      "Engineering and consultancy firm providing MEP and structural consulting services.",
+    projectCount: 6,
+    testimonial:
+      "Woodtech's technical team assists us in specifying appropriate materials for complex projects.",
+    testimonialAuthor: "Eng. M. Hasan",
+    testimonialAuthorRole: "Senior Consultant, Professional Associates Ltd.",
+    yearsPartnership: 3,
+  },
+  {
+    id: "client-048",
+    name: "Hotel DS Palace",
+    industry: "Hospitality",
+    logo: "/clients/hotel-ds-palace-logo.svg",
+    description: "Hotel and hospitality operator for regional properties.",
+    projectCount: 2,
+    testimonial:
+      "Woodtech's finishes contributed to an elevated guest experience at our properties.",
+    testimonialAuthor: "Mr. Aminul",
+    testimonialAuthorRole: "General Manager, Hotel DS Palace",
+    yearsPartnership: 1,
+  },
+  {
+    id: "client-049",
+    name: "Dcon Design Studio",
+    industry: "Design & Interiors",
+    logo: "/clients/dcon-logo.svg",
+    description:
+      "Interior design and fit-out studio delivering bespoke joinery and finishes.",
+    projectCount: 4,
+    testimonial:
+      "Dcon depends on Woodtech for quality materials that match our design standards.",
+    testimonialAuthor: "Arch. D. Chowdhury",
+    testimonialAuthorRole: "Founder, Dcon Design Studio",
+    yearsPartnership: 2,
+  },
+  {
+    id: "client-050",
+    name: "Priyanka Group",
+    industry: "Manufacturing & Retail",
+    logo: "/clients/priyanka-logo.svg",
+    description:
+      "Group active in manufacturing, retail, and distribution sectors.",
+    projectCount: 5,
+    testimonial:
+      "Priyanka Group benefits from Woodtech's consistent material performance across projects.",
+    testimonialAuthor: "Mr. Priyo Kumar",
+    testimonialAuthorRole: "Director, Priyanka Group",
+    yearsPartnership: 3,
   },
 ];
