@@ -17,18 +17,18 @@ const CertificatesPage = () => {
       <CertificatesHeader />
 
       {/* Statistics Section */}
-      <div className="lg:px-36">
+      {/* <div className="lg:px-36">
         <CertificateStats />
-      </div>
+      </div> */}
 
       {/* Certificates Grid with Filters */}
       <CertificatesGrid />
 
       {/* Benefits Section */}
-      <CertificateBenefits />
+      {/* <CertificateBenefits /> */}
 
       {/* Call to Action Section */}
-      <CertificateCTA />
+      {/* <CertificateCTA /> */}
     </div>
   );
 };
