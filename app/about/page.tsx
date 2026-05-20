@@ -50,10 +50,7 @@ export default function AboutPage(): React.JSX.Element {
               className="text-[17px] leading-[1.6] text-[#6b5847] max-w-[480px]"
               data-reveal
             >
-              Woodtech Industries (Pvt.) Ltd. is a family-run plywood and
-              wooden-door manufacturer operating from Bagerhat, Bangladesh since
-              2014. Over a decade we've grown from one press to three production
-              halls — still grading every sheet by hand.
+              Woodtech Industries (Pvt.) Ltd are driven by core values of respect, honesty, integrity, and strong business ethics in every aspect of what we do. Our goal is to consistently provide superior plywood and door products while developing a loyal base of valued customers.
             </p>
           </div>
         </div>
@@ -73,26 +70,24 @@ export default function AboutPage(): React.JSX.Element {
               </h3>
             </aside>
             <div className="space-y-6" data-reveal>
-              <p className="text-[17px] leading-[1.65]">
+              {/* <p className="text-[17px] leading-[1.65]">
                 A sheet of plywood is a small promise. It will be flat. It will
                 not delaminate. It will hold a screw where the carpenter drives
                 one.
-              </p>
+              </p> */}
               <p className="text-[17px] leading-[1.65]">
                 Woodtech Industries was founded in 2014 on the bet that
                 Bangladesh's growing construction market deserved plywood that
-                kept those promises. The founding team had spent a decade in
-                timber trading and had seen, up close, how often imported and
-                local boards alike failed the carpenters who trusted them.
+                kept those promises. Through innovations in high-quality adhesives and resins, precision wood preparation, panel sanding, and modern press technology, we continue to set new standards in reconstituted wood products. We are proud that our plywood has been tested and recognized by BUET (Bangladesh University of Engineering and Technology) as a product of the finest quality.
               </p>
-              <p className="text-[17px] leading-[1.65]">
+              {/* <p className="text-[17px] leading-[1.65]">
                 The original press ran out of a single hall in Bagerhat. The
                 first customers were local furniture makers who would walk the
                 yard, pull sheets off the stack, and bend them to test the bond.
                 We still invite customers to do that.
-              </p>
+              </p> */}
               <p className="text-[17px] leading-[1.65]">
-                Today the facility spans three halls and 38,000 square feet of
+                Today the facility spans over 35,000 square feet of
                 production floor, including a dedicated door shop and a
                 laminating line. A second generation of the founding family now
                 runs day-to-day operations, with many of the original press
@@ -342,6 +337,30 @@ export default function AboutPage(): React.JSX.Element {
             </p>
           </div>
           <div className="grid gap-8 lg:grid-cols-3">
+           
+            <article
+              className="bg-[#f6f1ea] border border-[#2a1d1422] overflow-hidden"
+              data-reveal
+            >
+              <div className="h-80 bg-[#ede5d8] border-b border-[#2a1d1422] flex items-center justify-center text-[#6b5847] text-center p-4 text-sm">
+                <div>
+                  PORTRAIT
+                  <br />
+                  S. M. Ahasanur Rahman
+                  <br />— director
+                </div>
+              </div>
+              <div className="p-6">
+                
+                <h4 className="font-serif text-xl font-bold mb-1 tracking-[-0.01em]">
+                  S. M. Ahasanur Rahman
+                </h4>
+                <div className="text-sm text-[#6b5847] mb-4">Director</div>
+                <p className="text-sm leading-[1.55] text-[#2a1d14] pt-4 border-t border-[#2a1d1422]">
+                  Director of Woodtech Industries (Pvt.) Ltd.
+                </p>
+              </div>
+            </article>
             <article
               className="bg-[#f6f1ea] border border-[#2a1d1422] overflow-hidden"
               data-reveal
@@ -355,9 +374,7 @@ export default function AboutPage(): React.JSX.Element {
                 </div>
               </div>
               <div className="p-6">
-                <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-[#8b5e3c] block mb-2.5">
-                  01 · MD
-                </span>
+          
                 <h4 className="font-serif text-xl font-bold mb-1 tracking-[-0.01em]">
                   Md. Aminur Rahman
                 </h4>
@@ -377,39 +394,12 @@ export default function AboutPage(): React.JSX.Element {
                 <div>
                   PORTRAIT
                   <br />
-                  S. M. Ahasanur Rahman
-                  <br />— director
-                </div>
-              </div>
-              <div className="p-6">
-                <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-[#8b5e3c] block mb-2.5">
-                  02 · Director
-                </span>
-                <h4 className="font-serif text-xl font-bold mb-1 tracking-[-0.01em]">
-                  S. M. Ahasanur Rahman
-                </h4>
-                <div className="text-sm text-[#6b5847] mb-4">Director</div>
-                <p className="text-sm leading-[1.55] text-[#2a1d14] pt-4 border-t border-[#2a1d1422]">
-                  Director of Woodtech Industries (Pvt.) Ltd.
-                </p>
-              </div>
-            </article>
-            <article
-              className="bg-[#f6f1ea] border border-[#2a1d1422] overflow-hidden"
-              data-reveal
-            >
-              <div className="h-80 bg-[#ede5d8] border-b border-[#2a1d1422] flex items-center justify-center text-[#6b5847] text-center p-4 text-sm">
-                <div>
-                  PORTRAIT
-                  <br />
                   Md. Mizanoor Rahman
                   <br />— chairman
                 </div>
               </div>
               <div className="p-6">
-                <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-[#8b5e3c] block mb-2.5">
-                  03 · Chairman
-                </span>
+               
                 <h4 className="font-serif text-xl font-bold mb-1 tracking-[-0.01em]">
                   Md. Mizanoor Rahman
                 </h4>
@@ -439,7 +429,7 @@ export default function AboutPage(): React.JSX.Element {
             Hall 03 · Bagerhat · 2026
           </span>
           <h2 className="font-serif text-[clamp(40px,5vw,72px)] leading-tight tracking-[-0.02em] max-w-[820px] mb-6">
-            38,000 sq ft of grading tables, presses, and patient men with
+            More than 35,000 sq ft of grading tables, presses, and patient men with
             calipers.
           </h2>
           <div className="flex flex-wrap gap-10 font-mono text-sm uppercase tracking-[0.1em] text-opacity-80 pt-6 border-t border-opacity-20 border-[#f6f1ea] max-w-[820px]">
@@ -466,7 +456,7 @@ export default function AboutPage(): React.JSX.Element {
             <div>
               <span className="text-opacity-80 text-[#f6f1ea]">Staff</span>
               <strong className="text-[#f6f1ea] block mt-1 text-xl font-serif tracking-[-0.01em]">
-                140 on payroll
+                150+ on payroll
               </strong>
             </div>
           </div>

@@ -26,7 +26,7 @@ export function ProductShowcaseSection(): React.JSX.Element {
             className="max-w-2xl font-sans text-[15px] leading-[1.6] text-muted"
             data-reveal
           >
-            Three product lines, each graded to IS standards and manufactured
+          Prouducts each graded to IS standards and manufactured
             for tropical climate stability. Custom sizes and finishes on
             request.
           </p>

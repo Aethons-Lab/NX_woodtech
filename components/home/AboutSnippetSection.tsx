@@ -25,17 +25,10 @@ export function AboutSnippetSection(): React.JSX.Element {
             className="space-y-4 font-sans text-[15px] leading-[1.7] text-muted"
           >
             <p>
-              Woodtech Industries (Pvt.) Ltd. was founded in 2014 in Bagerhat.
-              Building on a decade of prior timber-trading experience, the
-              business grew from one press line to multiple production halls, a
-              dedicated door shop, and a laminating floor serving projects
-              across Bangladesh.
+            WoodTech Industries (Pvt.) Ltd. is one of Bangladesh's leading manufacturers of premium plywood and door products, crafted from carefully selected timbers using the latest manufacturing technology and advanced equipment.
             </p>
             <p>
-              Every sheet that leaves our yard is graded by hand, because
-              specification sheets can't tell the difference between a panel
-              that will hold up in a Dhaka monsoon and one that won't. We think
-              that matters.
+             Our Vision is to deliver quality services that exceed our customers' expectations, while our Mission is to build lasting relationships through exceptional service, innovation, and advanced technology.
             </p>
           </div>
         </div>

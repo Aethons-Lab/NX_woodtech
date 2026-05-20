@@ -24,8 +24,7 @@ export function HeroSection(): React.JSX.Element {
             </h1>
             <p className="hero-lede max-w-xl text-[17px] leading-[1.6] text-muted">
               Engineered plywood and solid wooden doors, pressed and finished in
-              Bangladesh since 2014, with roots in timber trading that go back
-              over two decades.
+              Bangladesh since 2014.
             </p>
             <div className="hero-actions flex flex-col gap-3 pt-1 sm:flex-row sm:items-center">
               <a
@@ -45,7 +44,7 @@ export function HeroSection(): React.JSX.Element {
             <div className="hero-meta flex gap-8 pt-4 md:gap-10">
               <div className="hero-meta-item">
                 <div className="text-[clamp(28px,4vw,48px)] font-serif font-bold leading-none text-cocoa">
-                  13+
+                  10+
                 </div>
                 <div className="text-[12px] uppercase tracking-widest text-muted">
                   Years of craft
