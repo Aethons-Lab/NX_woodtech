@@ -45,8 +45,10 @@ export function WhySection(): React.JSX.Element {
             </div>
             <h3 className="font-serif text-xl font-bold text-cocoa">Quality</h3>
             <p className="font-sans text-sm leading-normal text-muted">
-              Every sheet is hand-graded against IS standards before leaving the
-              yard. Rejects don't ship — they go back through the line.
+              The Plywood and Door are being made with high quality and selected
+              timbers. Some of the technological innovations include high
+              quality of adhesive/resin, wood preparation, panel sanding and
+              press technology.
             </p>
           </div>
 
@@ -73,9 +75,10 @@ export function WhySection(): React.JSX.Element {
               Durability
             </h3>
             <p className="font-sans text-sm leading-normal text-muted">
-              Phenolic resin bonding and cross-grain core construction. Built
-              for Bangladeshi humidity, tested against water immersion and
-              thermal cycling.
+              Woodtech plywood is designed in various forms to suit different
+              environments and usages needs. Each types handles stress,
+              moisture, and daily wear differently. So choosing the right one
+              ensures longevity with satisfactory performance.
             </p>
           </div>
 
@@ -102,9 +105,10 @@ export function WhySection(): React.JSX.Element {
               Innovation
             </h3>
             <p className="font-sans text-sm leading-normal text-muted">
-              In-house R&amp;D on adhesives and veneer processing. Our Shield
-              Series uses a termite- and fire-resistant formulation developed on
-              site.
+              Driven by innovation and growing demand for high performance,
+              Woodtech is manufacturing water resistant, anti-termite,
+              borer-proof boards. We are also going to introduce Fire Retardant
+              Plywood.
             </p>
           </div>
 

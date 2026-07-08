@@ -21,9 +21,9 @@ const ProductHeaderSection = () => {
           </h1>
 
           <p className="max-w-120 text-[17px] leading-[1.6] text-[#6b5847]">
-            Six decades of craft distilled into three product families —
-            decorative veneer, structural plywood, and solid wood doors. Every
-            product pressed, graded, and finished at our Narayanganj facility.
+            Founded in 2014, Woodtech distills over half a century of timber
+            expertise into decorative veneer, structural plywood, and solid wood
+            doors.
           </p>
         </div>
       </div>
