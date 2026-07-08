@@ -44,13 +44,19 @@ export default function AboutPage(): React.JSX.Element {
             >
               About
               <br />
-              <em className="italic text-[#8b5e3c] font-normal">the mill.</em>
+              <em className="italic text-[#8b5e3c] font-normal">
+                The Fcatory.
+              </em>
             </h1>
             <p
               className="text-[17px] leading-[1.6] text-[#6b5847] max-w-[480px]"
               data-reveal
             >
-              Woodtech Industries (Pvt.) Ltd are driven by core values of respect, honesty, integrity, and strong business ethics in every aspect of what we do. Our goal is to consistently provide superior plywood and door products while developing a loyal base of valued customers.
+              Woodtech Industries (Pvt.) Ltd is driven by core values of
+              respect, honesty, integrity, and strong business ethics in every
+              aspect of what we do. Our goal is to consistently provide superior
+              plywood and door products while developing a loyal base of valued
+              customers.
             </p>
           </div>
         </div>
@@ -77,21 +83,20 @@ export default function AboutPage(): React.JSX.Element {
               </p> */}
               <p className="text-[17px] leading-[1.65]">
                 Woodtech Industries was founded in 2014 on the bet that
-                Bangladesh's growing construction market deserved plywood that
-                kept those promises. Through innovations in high-quality adhesives and resins, precision wood preparation, panel sanding, and modern press technology, we continue to set new standards in reconstituted wood products. We are proud that our plywood has been tested and recognized by BUET (Bangladesh University of Engineering and Technology) as a product of the finest quality.
+                Bangladesh's growing construction market deserves plywood and
+                door that kept those promises. Through technological innovations
+                we continue to set new standard in reconstituted wood products.
+                We are proud that our plywood has been tested and recognized by
+                BUET (Bangladesh University of Engineering and Technology) as a
+                product of the finest quality.
               </p>
-              {/* <p className="text-[17px] leading-[1.65]">
-                The original press ran out of a single hall in Bagerhat. The
-                first customers were local furniture makers who would walk the
-                yard, pull sheets off the stack, and bend them to test the bond.
-                We still invite customers to do that.
-              </p> */}
+
               <p className="text-[17px] leading-[1.65]">
-                Today the facility spans over 35,000 square feet of
-                production floor, including a dedicated door shop and a
-                laminating line. A second generation of the founding family now
-                runs day-to-day operations, with many of the original press
-                operators still on the team.
+                Today the facility spans over approx. 50,000 square feet of
+                production floor, including a dedicated door section and a
+                laminating line. A second generation of the founding family is
+                now running day-to-day operations; in association with a team of
+                ingenious technicians and expertise of different sections.
               </p>
 
               <div className="mt-12 border-t border-[#2a1d1422] pt-10">
@@ -337,7 +342,6 @@ export default function AboutPage(): React.JSX.Element {
             </p>
           </div>
           <div className="grid gap-8 lg:grid-cols-3">
-           
             <article
               className="bg-[#f6f1ea] border border-[#2a1d1422] overflow-hidden"
               data-reveal
@@ -351,7 +355,6 @@ export default function AboutPage(): React.JSX.Element {
                 </div>
               </div>
               <div className="p-6">
-                
                 <h4 className="font-serif text-xl font-bold mb-1 tracking-[-0.01em]">
                   S. M. Ahasanur Rahman
                 </h4>
@@ -374,7 +377,6 @@ export default function AboutPage(): React.JSX.Element {
                 </div>
               </div>
               <div className="p-6">
-          
                 <h4 className="font-serif text-xl font-bold mb-1 tracking-[-0.01em]">
                   Md. Aminur Rahman
                 </h4>
@@ -399,7 +401,6 @@ export default function AboutPage(): React.JSX.Element {
                 </div>
               </div>
               <div className="p-6">
-               
                 <h4 className="font-serif text-xl font-bold mb-1 tracking-[-0.01em]">
                   Md. Mizanoor Rahman
                 </h4>
@@ -429,8 +430,8 @@ export default function AboutPage(): React.JSX.Element {
             Hall 03 · Bagerhat · 2026
           </span>
           <h2 className="font-serif text-[clamp(40px,5vw,72px)] leading-tight tracking-[-0.02em] max-w-[820px] mb-6">
-            More than 35,000 sq ft of grading tables, presses, and patient men with
-            calipers.
+            More than 35,000 sq ft of grading tables, presses, and patient men
+            with calipers.
           </h2>
           <div className="flex flex-wrap gap-10 font-mono text-sm uppercase tracking-[0.1em] text-opacity-80 pt-6 border-t border-opacity-20 border-[#f6f1ea] max-w-[820px]">
             <div>

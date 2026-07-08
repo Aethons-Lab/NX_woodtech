@@ -25,10 +25,18 @@ export function AboutSnippetSection(): React.JSX.Element {
             className="space-y-4 font-sans text-[15px] leading-[1.7] text-muted"
           >
             <p>
-            WoodTech Industries (Pvt.) Ltd. is one of Bangladesh's leading manufacturers of premium plywood and door products, crafted from carefully selected timbers using the latest manufacturing technology and advanced equipment.
+              Woodtech Industries (Pvt.) Ltd. is one of Bangladesh's leading
+              manufacturers of premium plywood and door, crafted from carefully
+              selected timbers along with premium raw materials and high
+              strength adhesive using the latest manufacturing technology and
+              advanced equipment to ensure quality control and compliance with
+              industry standards.
             </p>
             <p>
-             Our Vision is to deliver quality services that exceed our customers' expectations, while our Mission is to build lasting relationships through exceptional service, innovation, and advanced technology.
+              Our Vision is to deliver quality services that exceed our
+              customers' expectations, while our Mission is to build lasting
+              relationships through exceptional service, innovation, and
+              advanced technology.
             </p>
           </div>
         </div>

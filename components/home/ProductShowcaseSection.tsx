@@ -26,9 +26,13 @@ export function ProductShowcaseSection(): React.JSX.Element {
             className="max-w-2xl font-sans text-[15px] leading-[1.6] text-muted"
             data-reveal
           >
-          Prouducts each graded to IS standards and manufactured
-            for tropical climate stability. Custom sizes and finishes on
-            request.
+            Plywood market is undergoing transformation due to changing consumer
+            preferences and favorable demographic trends. Growing consumer
+            aspirations for sophisticated interior designs are driving demand
+            for premium plywood with enhanced textures, finishes and decorative
+            laminates. Keeping this in our mind, we are manufacturing wide range
+            of plywoods and doors for office spaces, bedrooms, living rooms,
+            bathrooms and kitchens
           </p>
         </div>
 
