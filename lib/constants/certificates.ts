@@ -2,6 +2,7 @@ import incorporationCert from "@/public/certificates/certificate_of_incorporatio
 import nubtkCert from "@/public/certificates/nubtk.jpeg";
 import nubtk19Cert from "@/public/certificates/nubtk19.jpeg";
 import unnoyonMelaCert from "@/public/certificates/unnoyonmela.jpeg";
+import iso9001Cert from "@/public/certificates/iso-1.png";
 
 export interface Certificate {
   id: string;
@@ -22,6 +23,17 @@ export interface Certificate {
 }
 
 export const certificates: Certificate[] = [
+  {
+    id: "cert-iso-9001-2015",
+    name: "ISO 9001:2015 — Quality Management System",
+    issuer: "UNICERT (United Certification Services Limited)",
+    issueDate: "2025-06-11",
+    category: "ISO",
+    image: iso9001Cert,
+    description:
+      "Certifies that Woodtech Industries (Pvt.) Ltd. has been assessed and complies with ISO 9001.",
+    certificationNumber: "BDQ237W130",
+  },
   {
     id: "cert-incorporation",
     name: "Certificate of Incorporation",
