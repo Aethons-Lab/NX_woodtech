@@ -45,7 +45,7 @@ export default function AboutPage(): React.JSX.Element {
               About
               <br />
               <em className="italic text-[#8b5e3c] font-normal">
-                The Fcatory.
+                The Factory.
               </em>
             </h1>
             <p
@@ -175,9 +175,9 @@ export default function AboutPage(): React.JSX.Element {
               </h3>
               <p className="text-base leading-[1.6] text-[#6b5847] max-w-[420px]">
                 To manufacture plywood and wooden doors that meet the
-                specification sheet and then some. To employ our community
-                fairly, source responsibly, and stand behind every delivery from
-                press to polish.
+                specification. To employ our community fairly, source
+                responsibly, and stand behind every delivery from press to
+                polish.
               </p>
             </div>
             <div
