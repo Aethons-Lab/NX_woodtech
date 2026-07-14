@@ -12,10 +12,10 @@ export function MarqueeSection() {
             Marine Grade Plywood
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Flush Door
+            Veneer Flush Door
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Panel Door
+            Water Proof Marine Door
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
             Block Board
@@ -55,6 +55,9 @@ export function MarqueeSection() {
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
             Cup Board
+          </span>
+          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
+            Solid Wooden Door
           </span>
         </div>
       </div>

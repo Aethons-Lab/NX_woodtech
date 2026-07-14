@@ -117,7 +117,9 @@ export function HeroSection(): React.JSX.Element {
               <span className="font-mono text-[10px] uppercase tracking-[0.15em]">
                 Fig. 01
               </span>
-              <p>18mm marine-grade ply, phenolic bonded.</p>
+              <p className="text-xl font-semibold">
+                Built with precision, designed for quality-conscious people.....
+              </p>
             </div>
           </div>
         </div>
