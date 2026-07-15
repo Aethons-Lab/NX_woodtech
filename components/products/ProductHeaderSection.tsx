@@ -21,9 +21,13 @@ const ProductHeaderSection = () => {
           </h1>
 
           <p className="max-w-120 text-[17px] leading-[1.6] text-[#6b5847]">
-            Founded in 2014, Woodtech distills over half a century of timber
-            expertise into decorative veneer, structural plywood, and solid wood
-            doors.
+            <p>
+              Founded in 2014, Woodtech has built a reputation for quality
+              craftsmanship, transforming over a decade of timber expertise into
+              all type of plywood and door. Every product is crafted with
+              precision, durability, and timeless aesthetics to meet the highest
+              standards of residential and commercial projects.
+            </p>
           </p>
         </div>
       </div>

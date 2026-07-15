@@ -109,13 +109,27 @@ export default function AboutPage(): React.JSX.Element {
                       <strong className="font-semibold block mb-1">
                         Founded in Bagerhat
                       </strong>
-                      Single press line, commercial plywood. Three founders,
-                      eleven staff.
+                      Single press line, commercial plywood. Three founders, two
+                      hundred workers.
                     </div>
                   </div>
                   <div className="grid grid-cols-[120px_1fr] gap-8 py-5 border-b border-[#2a1d1422]">
                     <div className="font-serif text-2xl font-bold text-[#8b5e3c]">
-                      2015
+                      2020
+                    </div>
+                    <div>
+                      <strong className="font-semibold block mb-1">
+                        Quality Test
+                      </strong>
+                      Our products have been independently tested by the
+                      Bangladesh University of Engineering and Technology
+                      (BUET), verifying their quality and performance against
+                      recognized testing standards.
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-[120px_1fr] gap-8 py-5 border-b border-[#2a1d1422]">
+                    <div className="font-serif text-2xl font-bold text-[#8b5e3c]">
+                      2025
                     </div>
                     <div>
                       <strong className="font-semibold block mb-1">
@@ -125,18 +139,7 @@ export default function AboutPage(): React.JSX.Element {
                       lines.
                     </div>
                   </div>
-                  <div className="grid grid-cols-[120px_1fr] gap-8 py-5 border-b border-[#2a1d1422]">
-                    <div className="font-serif text-2xl font-bold text-[#8b5e3c]">
-                      2020
-                    </div>
-                    <div>
-                      <strong className="font-semibold block mb-1">
-                        Shield Series launched
-                      </strong>
-                      In-house R&amp;D delivers termite- and fire-resistant
-                      plywood for institutional use.
-                    </div>
-                  </div>
+
                   <div className="grid grid-cols-[120px_1fr] gap-8 py-5">
                     <div className="font-serif text-2xl font-bold text-[#8b5e3c]">
                       2026
@@ -430,7 +433,7 @@ export default function AboutPage(): React.JSX.Element {
             Hall 03 · Bagerhat · 2026
           </span>
           <h2 className="font-serif text-[clamp(40px,5vw,72px)] leading-tight tracking-[-0.02em] max-w-[820px] mb-6">
-            More than 35,000 sq ft of grading tables, presses, and patient men
+            More than 50,000 sq ft of grading tables, presses, and patient men
             with calipers.
           </h2>
           <div className="flex flex-wrap gap-10 font-mono text-sm uppercase tracking-[0.1em] text-opacity-80 pt-6 border-t border-opacity-20 border-[#f6f1ea] max-w-[820px]">
@@ -449,7 +452,9 @@ export default function AboutPage(): React.JSX.Element {
               </strong>
             </div>
             <div>
-              <span className="text-opacity-80 text-[#f6f1ea]">Door shop</span>
+              <span className="text-opacity-80 text-[#f6f1ea]">
+                Production Capacity
+              </span>
               <strong className="text-[#f6f1ea] block mt-1 text-xl font-serif tracking-[-0.01em]">
                 200 units / day
               </strong>
@@ -472,7 +477,7 @@ export default function AboutPage(): React.JSX.Element {
             Work with us
           </div>
           <h2 className="font-serif text-[clamp(40px,6vw,68px)] leading-[0.95] tracking-[-0.02em] mb-3">
-            Come see the mill.
+            Come see the Factory.
           </h2>
           <p className="text-[15px] leading-[1.6] text-opacity-75 text-[#f6f1ea] mb-8 max-w-2xl">
             We're happy to host architects, specifiers, and contractors for a
