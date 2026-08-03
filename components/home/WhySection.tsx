@@ -132,8 +132,8 @@ export function WhySection(): React.JSX.Element {
             </div>
             <h3 className="font-serif text-xl font-bold text-cocoa">Trust</h3>
             <p className="font-sans text-sm leading-normal text-muted">
-              Two decades of continuous operation, same ownership, same
-              production teams. Warranty stands behind every delivery.
+              More than a decade of continuous operation, same ownership and
+              production team. Warranty stands behind every delivery.
             </p>
           </div>
         </div>

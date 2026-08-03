@@ -103,7 +103,7 @@ export function ProductShowcaseSection(): React.JSX.Element {
             </div>
             <div className="space-y-2.5 p-4">
               <div className="font-mono text-[11px] uppercase tracking-[0.15em] text-muted">
-                02 / Doors
+                02 / Door
               </div>
               <h3 className="font-serif text-xl font-bold leading-tight text-cocoa">
                 Veneer Flush Door
@@ -147,7 +147,7 @@ export function ProductShowcaseSection(): React.JSX.Element {
             </div>
             <div className="space-y-2.5 p-4">
               <div className="font-mono text-[11px] uppercase tracking-[0.15em] text-muted">
-                03 / Doors
+                03 / Door
               </div>
               <h3 className="font-serif text-xl font-bold leading-tight text-cocoa">
                 Solid Wooden Door

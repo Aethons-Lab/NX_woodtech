@@ -9,8 +9,8 @@ const LeafletMap = dynamic(() => import("../../components/LeafletMap"), {
 
 const CHIPS = [
   "Plywood",
-  "Flush Doors",
-  "Panel Doors",
+  "Flush Door",
+  "Panel Door",
   "Block Board",
   "Custom Size",
   "Site Visit",

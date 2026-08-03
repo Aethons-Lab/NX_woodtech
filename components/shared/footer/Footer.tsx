@@ -54,13 +54,13 @@ export default function Footer(): React.JSX.Element {
                 href="/#products"
                 className="text-sm text-[rgba(246,241,234,0.85)] transition-colors duration-150 hover:text-[#7ab027]"
               >
-                Flush Doors
+                Flush Door
               </Link>
               <Link
                 href="/#products"
                 className="text-sm text-[rgba(246,241,234,0.85)] transition-colors duration-150 hover:text-[#7ab027]"
               >
-                Panel Doors
+                Panel Door
               </Link>
               <Link
                 href="/#products"
