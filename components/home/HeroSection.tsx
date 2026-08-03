@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import gurjan from "@/public/products/gurjan-plywood.jpg";
-import teak from "@/public/products/teak-door.jpg";
-import walnut from "@/public/products/walnut.jpg";
+import v1 from "@/public/products/vineerflush_door.jpeg";
+import v2 from "@/public/products/vineerflush_door2.jpeg";
+import v3 from "@/public/products/vineerflush_door3.jpeg";
 
 export function HeroSection(): React.JSX.Element {
   return (
@@ -76,7 +76,7 @@ export function HeroSection(): React.JSX.Element {
             <div className="hero-stack space-y-3">
               <div className="relative aspect-square rounded-lg overflow-hidden bg-paper">
                 <Image
-                  src={gurjan}
+                  src={v1}
                   alt="Stacked plywood sheets with angled light"
                   fill
                   className="object-cover"
@@ -89,7 +89,7 @@ export function HeroSection(): React.JSX.Element {
               <div className="grid grid-cols-2 gap-3">
                 <div className="relative aspect-square rounded-lg overflow-hidden bg-paper">
                   <Image
-                    src={teak}
+                    src={v2}
                     alt="Door edge profile detail"
                     fill
                     className="object-cover"
@@ -101,7 +101,7 @@ export function HeroSection(): React.JSX.Element {
                 </div>
                 <div className="relative aspect-square rounded-lg overflow-hidden bg-paper">
                   <Image
-                    src={walnut}
+                    src={v3}
                     alt="Veneer grain macro texture"
                     fill
                     loading="lazy"
@@ -113,7 +113,7 @@ export function HeroSection(): React.JSX.Element {
                 </div>
               </div>
             </div>
-            <div className="hero-caption mt-4 space-y-1.5 text-sm text-muted">
+            {/* <div className="hero-caption mt-4 space-y-1.5 text-sm text-muted">
               <span className="font-mono text-[10px] uppercase tracking-[0.15em]">
                 Fig. 01
               </span>

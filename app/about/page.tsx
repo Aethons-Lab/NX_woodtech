@@ -52,11 +52,15 @@ export default function AboutPage(): React.JSX.Element {
               className="text-[17px] leading-[1.6] text-[#6b5847] max-w-[480px]"
               data-reveal
             >
-              Woodtech Industries (Pvt.) Ltd is driven by core values of
-              respect, honesty, integrity, and strong business ethics in every
-              aspect of what we do. Our goal is to consistently provide superior
-              plywood and door products while developing a loyal base of valued
-              customers.
+              Woodtech is one of the leading plywood and door manufacturers and
+              suppliers. Our journey began in 2014 with the vision to empower
+              the country with high quality plywood and door at competitive
+              price. Our Woodtech ply is incredibly versatile, perfect for
+              diverse projects and an excellent choice for crafting durable
+              furniture. Beyond interiors, its robust properties make it
+              suitable for decorative installation, architectural models and
+              even temporary structurers in commercial setting, providing both
+              aesthetic appeal and structural integrity.
             </p>
           </div>
         </div>
@@ -76,27 +80,22 @@ export default function AboutPage(): React.JSX.Element {
               </h3>
             </aside>
             <div className="space-y-6" data-reveal>
-              {/* <p className="text-[17px] leading-[1.65]">
-                A sheet of plywood is a small promise. It will be flat. It will
-                not delaminate. It will hold a screw where the carpenter drives
-                one.
-              </p> */}
               <p className="text-[17px] leading-[1.65]">
-                Woodtech Industries was founded in 2014 on the bet that
-                Bangladesh's growing construction market deserves plywood and
-                door that kept those promises. Through technological innovations
-                we continue to set new standard in reconstituted wood products.
-                We are proud that our plywood has been tested and recognized by
-                BUET (Bangladesh University of Engineering and Technology) as a
-                product of the finest quality.
+                We emphasize on the use of superior quality hard wood and
+                advanced manufacturing technology. Our expertise and technicians
+                always adhere to quality criteria to ensure resistance to
+                moisture, termites and strong nail holding capabilities for
+                loading capacity.
               </p>
 
               <p className="text-[17px] leading-[1.65]">
-                Today the facility spans over approx. 50,000 square feet of
-                production floor, including a dedicated door section and a
-                laminating line. A second generation of the founding family is
-                now running day-to-day operations; in association with a team of
-                ingenious technicians and expertise of different sections.
+                The use of latest technology like high pressure bonding,
+                thickness calibration and chemical treatment, is assisting in
+                enhancing the durability and efficiency of the plywood products
+                making them ideal for furniture, decorative application and
+                construction. Over the years and through our development period,
+                we have become the benchmark Bangladeshi Brand with BUET Tested
+                and ISO Certification.
               </p>
 
               <div className="mt-12 border-t border-[#2a1d1422] pt-10">
