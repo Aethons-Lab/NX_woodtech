@@ -76,9 +76,9 @@ export function WhySection(): React.JSX.Element {
             </h3>
             <p className="font-sans text-sm leading-normal text-muted">
               Woodtech plywood is designed in various forms to suit different
-              environments and usages needs. Each types handles stress,
-              moisture, and daily wear differently. So choosing the right one
-              ensures longevity with satisfactory performance.
+              environments and usages needs. Each type handles stress, moisture,
+              and daily wear differently. So choosing the right one ensures
+              longevity with satisfactory performance.
             </p>
           </div>
 

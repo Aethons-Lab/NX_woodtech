@@ -460,10 +460,10 @@ export default function ContactPage(): React.JSX.Element {
               <div className="bg-[#2a1d14] text-[#f6f1ea] p-8" data-reveal>
                 <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-opacity-70 text-[#f6f1ea] flex items-center gap-2.5 mb-4">
                   <span className="w-6 h-px bg-opacity-50 bg-[#f6f1ea]"></span>
-                  01 · Direct lines
+                  Direct lines
                 </div>
                 <div className="font-serif text-2xl font-bold mb-6">
-                  Reach a person, not a form.
+                  Reach a person.
                 </div>
                 <div className="space-y-4">
                   <div>
@@ -471,32 +471,12 @@ export default function ContactPage(): React.JSX.Element {
                       Dhaka
                     </div>
                     <div className="text-sm">
-                      <a
-                        href="tel:02477721103"
-                        className="hover:text-[#c68a3a]"
-                      >
-                        02477721103
-                      </a>{" "}
-                      |{" "}
-                      <a
-                        href="tel:01874090410"
-                        className="hover:text-[#c68a3a]"
-                      >
-                        01874090410
-                      </a>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-opacity-70 text-[#f6f1ea] mb-1">
-                      Khulna
-                    </div>
-                    <div className="text-sm">
                       <a href="tel:0255012800" className="hover:text-[#c68a3a]">
                         0255012800
                       </a>{" "}
                       |{" "}
                       <a
-                        href="tel:01874090420"
+                        href="tel:01874090410"
                         className="hover:text-[#c68a3a]"
                       >
                         01874090420
@@ -505,9 +485,43 @@ export default function ContactPage(): React.JSX.Element {
                   </div>
                   <div>
                     <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-opacity-70 text-[#f6f1ea] mb-1">
+                      Khulna
+                    </div>
+                    <div className="text-sm">
+                      <a
+                        href="tel:02477720690"
+                        className="hover:text-[#c68a3a]"
+                      >
+                        02477720690
+                      </a>{" "}
+                      <br />
+                      <a
+                        href="tel: 02477721103"
+                        className="hover:text-[#c68a3a]"
+                      >
+                        02477721103
+                      </a>{" "}
+                      |{" "}
+                      <a
+                        href="tel:01874090420"
+                        className="hover:text-[#c68a3a]"
+                      >
+                        01874090410
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-opacity-70 text-[#f6f1ea] mb-1">
                       Email
                     </div>
                     <div className="text-sm">
+                      <a
+                        href="mailto:woodtechipl@gmail.com"
+                        className="hover:text-[#c68a3a]"
+                      >
+                        woodtechipl@gmail.com
+                      </a>
+                      <br />
                       <a
                         href="mailto:info@woodtechipl.com"
                         className="hover:text-[#c68a3a]"
@@ -525,7 +539,7 @@ export default function ContactPage(): React.JSX.Element {
               >
                 <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#8b5e3c] flex items-center gap-2.5 mb-4">
                   <span className="w-6 h-px bg-[#8b5e3c]"></span>
-                  02 · Offices &amp; Factory
+                  Offices &amp; Factory
                 </div>
                 <div className="font-serif text-2xl font-bold mb-6">
                   Where to find us.
@@ -565,8 +579,7 @@ export default function ContactPage(): React.JSX.Element {
                       Factory
                     </div>
                     <div className="text-sm mb-2">
-                      Chara bot tolar more, Khulna-Mongla Highway, Fakirhat,
-                      Bagerhat
+                      Piljong, Khulna-Mongla Highway, Fakirhat, Bagerhat
                     </div>
                     <a
                       href="https://www.google.com/maps/search/?api=1&query=Fakirhat+Bagerhat+Bangladesh"
@@ -664,7 +677,7 @@ export default function ContactPage(): React.JSX.Element {
                 {
                   num: "03",
                   name: "Factory",
-                  addr: "Chara bot tolar more, Khulna-Mongla Highway, Fakirhat, Bagerhat",
+                  addr: "Piljong, Khulna-Mongla Highway, Fakirhat, Bagerhat",
                   phone: null as string | null,
                   dir: "https://www.google.com/maps/search/?api=1&query=Fakirhat+Bagerhat+Bangladesh",
                 },

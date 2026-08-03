@@ -12,7 +12,7 @@ export function HeroSection(): React.JSX.Element {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div data-reveal className="space-y-6">
             <div className="font-mono text-[11px] uppercase tracking-[0.15em] text-muted">
-              Est. 2014 · Plywood &amp; Doors
+              Est. 2014 · Plywood &amp; Door
             </div>
             <h1
               className="hero-headline font-serif text-[clamp(48px,8vw,96px)] leading-[1.05] tracking-[-0.035em]"
@@ -117,8 +117,10 @@ export function HeroSection(): React.JSX.Element {
               <span className="font-mono text-[10px] uppercase tracking-[0.15em]">
                 Fig. 01
               </span>
-              <p>18mm marine-grade ply, phenolic bonded.</p>
-            </div> */}
+              <p className="text-xl font-semibold">
+                Built with precision, designed for quality-conscious people.....
+              </p>
+            </div>
           </div>
         </div>
       </div>

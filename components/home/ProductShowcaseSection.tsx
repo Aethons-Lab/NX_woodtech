@@ -63,12 +63,12 @@ export function ProductShowcaseSection(): React.JSX.Element {
                 01 / Plywood
               </div>
               <h3 className="font-serif text-xl font-bold leading-tight text-cocoa">
-                Plywood Sheets
+                Plywood
               </h3>
               <p className="font-sans text-sm leading-normal text-muted">
-                Phenolic- and urea-bonded sheets from 3mm to 25mm. Marine grade,
-                BWP, and MR variants — pressed flat and edge-sealed for long
-                panel life.
+                Woodtech General Purpose Plywood is manufactured from carefully
+                selected timber of high density and superior bonding capability
+                to ensure durability and the desired mechanical properties.
               </p>
               <div className="flex flex-wrap gap-2 pt-1.5 font-mono text-[11px] text-muted">
                 <span>3–25 mm</span>
@@ -106,12 +106,14 @@ export function ProductShowcaseSection(): React.JSX.Element {
                 02 / Doors
               </div>
               <h3 className="font-serif text-xl font-bold leading-tight text-cocoa">
-                Flush Doors
+                Veneer Flush Door
               </h3>
               <p className="font-sans text-sm leading-normal text-muted">
-                Solid and hollow core flush doors with cross-band construction.
-                Sapele veneer faces are the primary specification, with teak and
-                gurjan options available for polish or laminate finishing.
+                Woodtech Flush Door is a premium product made from high class
+                selected veneers, well seasoned wood and is bonded with UF & PF
+                resin to ensure solidarity and rigidity. Woodtech Flush Door can
+                be easily painted or polished as it has a smooth and flawless
+                surface finishing.
               </p>
               <div className="flex flex-wrap gap-2 pt-1.5 font-mono text-[11px] text-muted">
                 <span>30–40 mm</span>
@@ -148,12 +150,15 @@ export function ProductShowcaseSection(): React.JSX.Element {
                 03 / Doors
               </div>
               <h3 className="font-serif text-xl font-bold leading-tight text-cocoa">
-                Panel Doors
+                Solid Wooden Door
               </h3>
               <p className="font-sans text-sm leading-normal text-muted">
-                Traditional frame-and-stile doors in seasoned hardwood. Two,
-                four and six-panel profiles — milled, assembled and sanded
-                in-house.
+                Passed through proper chemical processes and made from premium
+                seasoned hardwood, our solid wooden doors are built to deliver
+                lasting strength, natural beauty, and superior performance.
+                Every door is precision-engineered, expertly assembled, and
+                finely finished in-house, offering timeless designs that enhance
+                the elegance, security, and value of any space.
               </p>
               <div className="flex flex-wrap gap-2 pt-1.5 font-mono text-[11px] text-muted">
                 <span>35–45 mm</span>

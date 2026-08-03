@@ -12,13 +12,34 @@ export function MarqueeSection() {
             Marine Grade Plywood
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Flush Doors
+            Veneer Flush Door
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Panel Doors
+            Water Proof Marine Door
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Block Boards
+            Block Board
+          </span>
+          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
+            Decorative Plywood
+          </span>
+          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
+            Commercial Plywood
+          </span>
+          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
+            Laminated Board
+          </span>
+          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
+            Marine Plywood
+          </span>
+          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
+            Veneer Flush Door
+          </span>
+          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
+            Panel Door
+          </span>
+          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
+            Block Board
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
             Decorative Veneer
@@ -27,28 +48,16 @@ export function MarqueeSection() {
             Commercial Ply
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Laminated Boards
+            Laminated Board
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Marine Grade Plywood
+            Flexi Plywood
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Flush Doors
+            Cup Board
           </span>
           <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Panel Doors
-          </span>
-          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Block Boards
-          </span>
-          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Decorative Veneer
-          </span>
-          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Commercial Ply
-          </span>
-          <span className="font-mono text-sm uppercase tracking-[0.2em] text-muted">
-            Laminated Boards
+            Solid Wooden Door
           </span>
         </div>
       </div>

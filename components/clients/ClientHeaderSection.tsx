@@ -25,8 +25,9 @@ const ClientHeaderSection = () => {
 
           <p className="max-w-120 text-[17px] leading-[1.6] text-[#6b5847]">
             Trusted by Bangladesh's leading manufacturers, architects, and
-            builders. Our partnerships span three decades, delivering excellence
-            across furniture, construction, energy, and defense sectors.
+            builders, our partnerships more than a decades,is delivering
+            excellence across furniture, construction, national & multinational
+            projects.
           </p>
         </div>
       </div>
