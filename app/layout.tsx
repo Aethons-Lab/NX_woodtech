@@ -26,7 +26,7 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Woodtech Ply — Crafting Quality, Building Futures",
   description:
-    "Engineered plywood and solid wooden doors, pressed and finished in Bangladesh.",
+    "Engineered plywood and solid wooden door, pressed and finished in Bangladesh.",
 };
 
 export default function RootLayout({

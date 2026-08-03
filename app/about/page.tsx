@@ -198,7 +198,7 @@ export default function AboutPage(): React.JSX.Element {
               <p className="text-base leading-[1.6] text-[#6b5847] max-w-[420px]">
                 A Woodtech sheet on the site means the carpenter won't have to
                 sort, cull, or worry. A Woodtech door means the doorway closes
-                the same way ten years on as it did installation day.
+                the same way it did on installation day.
               </p>
             </div>
           </div>

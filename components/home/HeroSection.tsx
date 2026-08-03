@@ -23,7 +23,7 @@ export function HeroSection(): React.JSX.Element {
               futures.
             </h1>
             <p className="hero-lede max-w-xl text-[17px] leading-[1.6] text-muted">
-              Plywood and doors. A reliable and innovative Plywood and Door
+              Plywood and door. A reliable and innovative Plywood and Door
               manufacturer in Bangladesh since 2014.
             </p>
             <div className="hero-actions flex flex-col gap-3 pt-1 sm:flex-row sm:items-center">
