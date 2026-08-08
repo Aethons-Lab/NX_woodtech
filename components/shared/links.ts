@@ -8,6 +8,6 @@ export const links: TLinks[] = [
   { href: "/products", label: "Products" },
   { href: "/clients", label: "Clients" },
   { href: "/about", label: "About" },
-  { href: "/certificates", label: "Certificates" },
+  // { href: "/certificates", label: "Certificates" },
   { href: "/contact", label: "Contact" },
 ];

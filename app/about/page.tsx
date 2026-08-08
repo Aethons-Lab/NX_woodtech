@@ -98,7 +98,7 @@ export default function AboutPage(): React.JSX.Element {
                 and ISO Certification.
               </p>
 
-              <div className="mt-12 border-t border-[#2a1d1422] pt-10">
+              {/* <div className="mt-12 border-t border-[#2a1d1422] pt-10">
                 <div className="space-y-5">
                   <div className="grid grid-cols-[120px_1fr] gap-8 py-5 border-b border-[#2a1d1422]">
                     <div className="font-serif text-2xl font-bold text-[#8b5e3c]">
@@ -152,7 +152,7 @@ export default function AboutPage(): React.JSX.Element {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -206,7 +206,7 @@ export default function AboutPage(): React.JSX.Element {
       </section>
 
       {/* VALUES */}
-      <section className="py-32 bg-[#f6f1ea]">
+      {/* <section className="py-32 bg-[#f6f1ea]">
         <div className="max-w-6xl mx-auto px-8">
           <div className="mb-16 max-w-[620px]" data-reveal>
             <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#8b5e3c] flex items-center gap-2.5 mb-5">
@@ -317,7 +317,7 @@ export default function AboutPage(): React.JSX.Element {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* LEADERSHIP */}
       <section className="py-32 bg-[#ede5d8] border-t border-[#2a1d1422]">
