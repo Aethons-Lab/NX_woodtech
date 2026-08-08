@@ -17,8 +17,7 @@ export default function Footer(): React.JSX.Element {
             </div>
             <p className="mt-4.5 text-sm leading-[1.6] text-[rgba(246,241,234,0.65)]">
               Engineered plywood and solid wooden doors, crafted in Bangladesh
-              since 2014, with roots in timber trading since 2003. Quality you
-              can press your hand against.
+              since 2014.
             </p>
           </div>
 
@@ -127,7 +126,6 @@ export default function Footer(): React.JSX.Element {
 
         <div className="flex items-center justify-between border-t border-[rgba(246,241,234,0.1)] pt-6 text-center font-mono text-xs tracking-wider text-[rgba(246,241,234,0.5)] max-[880px]:flex-col max-[880px]:gap-4">
           <div>© 2026 Woodtech Industries (Pvt.) Ltd. All rights reserved.</div>
-          <div>Dhaka / Khulna / Bagerhat / Bangladesh</div>
         </div>
       </div>
     </footer>
